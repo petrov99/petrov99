@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Stolzl';
+    src: url('Stolzl-Bold.eot');
+    src: url('Stolzl-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Stolzl-Bold.woff2') format('woff2'),
+        url('Stolzl-Bold.woff') format('woff'),
+        url('Stolzl-Bold.ttf') format('truetype'),
+        url('Stolzl-Bold.svg#Stolzl-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Stolzl';
+    src: url('Stolzl-Regular.eot');
+    src: url('Stolzl-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Stolzl-Regular.woff2') format('woff2'),
+        url('Stolzl-Regular.woff') format('woff'),
+        url('Stolzl-Regular.ttf') format('truetype'),
+        url('Stolzl-Regular.svg#Stolzl-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
