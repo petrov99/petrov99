@@ -428,7 +428,7 @@ body .container {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-bottom: 120px;
+  padding-bottom: 120px;
 }
 
 .header-promo .container .header-promo-bottom-about-icon .header-promo-bottom-about-icon-left {
