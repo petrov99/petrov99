@@ -4,7 +4,6 @@ $(function() {
 
 
 
-
 	// jQuery smooth scrolling
 	$('.go_to1').click(function() { // ловим клик по ссылке с классом go_to1
 		var scroll_el = $(this).attr('href'); // возьмем содержимое атрибута href, должен быть селектором, т.е. например начинаться с # или .
@@ -106,11 +105,75 @@ $(function() {
     onInit: function() {},
 
     // Callback function
-    onSlide: function(position, value) {},
+    onSlide: function(position, value) {
+
+    	var resultMonth = 0;
+    	var result3Month = 0;
+    	var resultYear = 0;
+
+    	if(value >= 1 && value <= 4) {
+    		resultMonth = (value*50*0.85/100)*22;
+    		result3Month = (value*50*0.85/100)*66;
+    		resultYear = (value*50*0.85/100)*264;
+    	}
+    	if(value >= 5 && value <= 9) {
+    		resultMonth = (value*50*0.90/100)*22;
+    		result3Month = (value*50*0.90/100)*66;
+    		resultYear = (value*50*0.90/100)*264;
+    	}
+    	if(value >= 10 && value <= 19) {
+    		resultMonth = (value*50*0.95/100)*22;
+    		result3Month = (value*50*0.95/100)*66;
+    		resultYear = (value*50*0.95/100)*264;
+    	}
+    	if(value >= 20 && value <= 49) {
+    		resultMonth = (value*50*1/100)*22;
+    		result3Month = (value*50*1/100)*66;
+    		resultYear = (value*50*1/100)*264;
+    	}
+    	if(value >= 50 && value <= 99) {
+    		resultMonth = (value*50*1.1/100)*22;
+    		result3Month = (value*50*1.1/100)*66;
+    		resultYear = (value*50*1.1/100)*264;
+    	}
+    	if(value >= 100 && value <= 200) {
+    		resultMonth = (value*50*1.2/100)*22;
+    		result3Month = (value*50*1.2/100)*66;
+    		resultYear = (value*50*1.2/100)*264;
+    	}
+
+    	// количество тикетов
+    	$('.statistic-right-top-item.ticket3 span').text(value);
+    	$('.statistic-right-bottom-left span').text(Math.round(resultMonth));
+    	$('.statistic-right-bottom-middle span').text(Math.round(result3Month));
+    	$('.statistic-right-bottom-right span').text(Math.round(resultYear));
+
+
+
+    	// $('.calc .container .input-tooltip').css({'left' : v});
+    	// $('.calc .container .input-tooltip').text(value+'$');
+
+			// var invest_sum2 = 0;
+			// $('.ticket-js').val(invest_sum2).change();
+			// console.log(invest_sum2);
+
+    },
 
     // Callback function
     onSlideEnd: function(position, value) {}
 	});
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
