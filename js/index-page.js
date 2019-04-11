@@ -111,6 +111,21 @@ $(function() {
     	var result3Month = 0;
     	var resultYear = 0;
 
+    	if(value == 1) {
+    		$('.statistic-right-top-item.ticket3 span').text(value + ' тикет');
+    	}
+    	if(value > 1 && value <= 4) {
+    		$('.statistic-right-top-item.ticket3 span').text(value + ' тикета');
+    	}
+    	if(value >= 5 && value <= 9) {
+    		$('.statistic-right-top-item.ticket3 span').text(value + ' тикетов');
+    	}
+    	if(value >= 10 && value <= 200) {
+    		$('.statistic-right-top-item.ticket3 span').text(value + ' тикетов');
+    	}
+
+
+
     	if(value >= 1 && value <= 4) {
     		resultMonth = (value*50*0.85/100)*22;
     		result3Month = (value*50*0.85/100)*66;
@@ -143,7 +158,6 @@ $(function() {
     	}
 
     	// количество тикетов
-    	$('.statistic-right-top-item.ticket3 span').text(value);
     	$('.statistic-right-bottom-left span').text(Math.round(resultMonth));
     	$('.statistic-right-bottom-middle span').text(Math.round(result3Month));
     	$('.statistic-right-bottom-right span').text(Math.round(resultYear));
