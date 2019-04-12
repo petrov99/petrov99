@@ -117,7 +117,7 @@ body .container {
 
 .header-promo {
   background: #f3f9fe url(../img/header-bg.png) right 0 no-repeat;
-  background-size: 75%;
+  background-size: 70%;
   min-height: 688px;
 }
 
@@ -522,8 +522,8 @@ body .container {
   font-weight: 700;
   font-size: 19px;
   color: #08364c;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  /*-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);*/
   background: #fff url(../img/our-ways-plus-icon2.png) 95% 50% no-repeat;
   padding: 20px 70px 20px 20px;
   margin-bottom: 30px;
@@ -1049,7 +1049,7 @@ body .container {
   -ms-flex-align: center;
   align-items: center;
   background: #6292f5;
-  padding: 20px 40px;
+  padding: 15px 20px;
   position: relative;
 }
 
@@ -1098,7 +1098,7 @@ body .container {
   -ms-flex-align: center;
   align-items: center;
   background: #6292f5;
-  padding: 20px 40px;
+  padding: 15px 20px;
   margin-top: auto;
   position: relative;
 }
@@ -1140,11 +1140,14 @@ body .container {
 .statistic .container .statistic-list .statistic-right {
   -ms-flex-preferred-size: 56%;
   flex-basis: 56%;
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .statistic .container .statistic-list .statistic-right .statistic-right-top {
   padding: 40px;
-  position: relative;
 }
 
 .statistic .container .statistic-list .statistic-right .statistic-right-top p {
@@ -1153,18 +1156,6 @@ body .container {
   font-size: 15px;
   color: #08364c;
   margin-bottom: 40px;
-}
-
-.statistic .container .statistic-list .statistic-right .statistic-right-top:after {
-  content: '';
-  position: absolute;
-  top: -22px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-  background: url(../img/statistic-icon4.png) 0 0 no-repeat;
-  width: 647px;
-  height: 20px;
 }
 
 .statistic .container .statistic-list .statistic-right .statistic-right-top .statistic-right-top-list {
@@ -1267,6 +1258,20 @@ body .container {
   background: url(../img/statistic-bg.jpg) 50% 0 no-repeat;
   background-size: cover;
   position: relative;
+
+  position: relative;
+}
+
+.statistic .container .statistic-list .statistic-right .statistic-right-bottom:before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background: url(../img/statistic-icon4.png) 0 0 no-repeat;
+  width: 647px;
+  height: 20px;
 }
 
 .statistic .container .statistic-list .statistic-right .statistic-right-bottom::after {
@@ -1277,7 +1282,7 @@ body .container {
   transform: translateX(-50%);
   top: -1px;
   border: 10px solid transparent;
-  border-top: 10px solid #fff;
+  border-top: 10px solid #F5F6F9;
 }
 
 .statistic .container .statistic-list .statistic-right .statistic-right-bottom .statistic-right-bottom-left,
@@ -1750,9 +1755,13 @@ body .container {
   text-align: center;
   padding: 170px 30px 40px;
   margin-bottom: 30px;
+
+  transition: all .5s;
 }
 
 .why-icon .container .why-icon-list .why-icon-item:nth-child(1):hover {
+  padding: 160px 30px 50px;
+
   background: url(../img/why-icon-icon1h.png) 50% 50px no-repeat, -webkit-gradient(linear, left top, left bottom, from(#59c3f8), to(#367eee));
   background: url(../img/why-icon-icon1h.png) 50% 50px no-repeat, linear-gradient(to bottom, #59c3f8, #367eee);
 }
@@ -1766,6 +1775,8 @@ body .container {
 }
 
 .why-icon .container .why-icon-list .why-icon-item:nth-child(2):hover {
+  padding: 160px 30px 50px;
+
   background: url(../img/why-icon-icon2h.png) 50% 50px no-repeat, -webkit-gradient(linear, left top, left bottom, from(#59c3f8), to(#367eee));
   background: url(../img/why-icon-icon2h.png) 50% 50px no-repeat, linear-gradient(to bottom, #59c3f8, #367eee);
 }
@@ -1779,6 +1790,8 @@ body .container {
 }
 
 .why-icon .container .why-icon-list .why-icon-item:nth-child(3):hover {
+  padding: 160px 30px 50px;
+
   background: url(../img/why-icon-icon3h.png) 50% 50px no-repeat, -webkit-gradient(linear, left top, left bottom, from(#59c3f8), to(#367eee));
   background: url(../img/why-icon-icon3h.png) 50% 50px no-repeat, linear-gradient(to bottom, #59c3f8, #367eee);
 }
@@ -1792,6 +1805,8 @@ body .container {
 }
 
 .why-icon .container .why-icon-list .why-icon-item:nth-child(4):hover {
+  padding: 160px 30px 50px;
+
   background: url(../img/why-icon-icon4h.png) 50% 50px no-repeat, -webkit-gradient(linear, left top, left bottom, from(#59c3f8), to(#367eee));
   background: url(../img/why-icon-icon4h.png) 50% 50px no-repeat, linear-gradient(to bottom, #59c3f8, #367eee);
 }
@@ -1805,6 +1820,8 @@ body .container {
 }
 
 .why-icon .container .why-icon-list .why-icon-item:nth-child(5):hover {
+  padding: 160px 30px 50px;
+
   background: url(../img/why-icon-icon5h.png) 50% 50px no-repeat, -webkit-gradient(linear, left top, left bottom, from(#59c3f8), to(#367eee));
   background: url(../img/why-icon-icon5h.png) 50% 50px no-repeat, linear-gradient(to bottom, #59c3f8, #367eee);
 }
@@ -1818,6 +1835,8 @@ body .container {
 }
 
 .why-icon .container .why-icon-list .why-icon-item:nth-child(6):hover {
+  padding: 160px 30px 50px;
+
   background: url(../img/why-icon-icon6h.png) 50% 50px no-repeat, -webkit-gradient(linear, left top, left bottom, from(#59c3f8), to(#367eee));
   background: url(../img/why-icon-icon6h.png) 50% 50px no-repeat, linear-gradient(to bottom, #59c3f8, #367eee);
 }
@@ -1876,7 +1895,7 @@ body .container {
 }
 
 .document-pdf .container {
-  background: #f3f9fe url(../img/document-pdf-bg.png) 50% 0 no-repeat;
+  background: #f3f9fe url(../img/document-pdf-bg.png) -42px 0 no-repeat;
   background-size: cover;
   min-height: 171px;
   padding: 40px 5px;
@@ -1899,6 +1918,7 @@ body .container {
 .document-pdf .container .document-pdf-list .document-pdf-item:nth-child(1) {
   -ms-flex-preferred-size: 10%;
   flex-basis: 10%;
+  text-align: right;
 }
 
 .document-pdf .container .document-pdf-list .document-pdf-item:nth-child(2) {
@@ -2376,12 +2396,12 @@ body .container {
     padding: 20px;
   }
 
-  .statistic .container .statistic-list .statistic-right .statistic-right-top:after {
-    display: none;
-  }
-
   .statistic .container .statistic-list .statistic-right .statistic-right-bottom {
     padding: 30px;
+  }
+
+  .statistic .container .statistic-list .statistic-right .statistic-right-bottom:before {
+    display: none;
   }
 
   .header-promo .container .header-promo-bottom-contacts {
