@@ -4,6 +4,16 @@ $(function() {
 
 
 
+	$('.why-icon-item').on('mouseenter', function(e) {
+		// $(this).css('background','url(../img/why-icon-icon1h.png) 50% 50px no-repeat, linear-gradient(to bottom, #59c3f8, #367eee)');
+		// $(this).animate({background: "url(../img/why-icon-icon1h.png) 50% 50px no-repeat, linear-gradient(to bottom, #59c3f8, #367eee)"}, 1000);
+	});
+	$('.why-icon-item').on('mouseleave', function(e) {
+		// $(this).css('background','#fff url(../img/why-icon-icon1.png) 50% 50px no-repeat');	
+	});
+
+
+
 	// jQuery smooth scrolling
 	$('.go_to1').click(function() { // ловим клик по ссылке с классом go_to1
 		var scroll_el = $(this).attr('href'); // возьмем содержимое атрибута href, должен быть селектором, т.е. например начинаться с # или .
