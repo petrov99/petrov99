@@ -1756,9 +1756,8 @@ body .container {
 
 .why-icon .container .why-icon-list .why-icon-item:nth-child(1):hover {
   padding: 160px 30px 50px;
-  -webkit-box-shadow: inset 0 0 150px 100px #3780EE;
-  box-shadow: inset 0 0 150px 100px #3780EE;
-  background: url(../img/why-icon-icon1h.png) 50% 50px no-repeat;
+  background: url(../img/why-icon-icon1h.png) 50% 50px no-repeat, -webkit-gradient(linear, left top, left bottom, from(#59c3f8), to(#367eee));
+  background: url(../img/why-icon-icon1h.png) 50% 50px no-repeat, linear-gradient(to bottom, #59c3f8, #367eee);
 }
 
 .why-icon .container .why-icon-list .why-icon-item:nth-child(1):hover h2 {
@@ -1771,9 +1770,8 @@ body .container {
 
 .why-icon .container .why-icon-list .why-icon-item:nth-child(2):hover {
   padding: 160px 30px 50px;
-  -webkit-box-shadow: inset 0 0 150px 100px #3780EE;
-  box-shadow: inset 0 0 150px 100px #3780EE;
-  background: url(../img/why-icon-icon2h.png) 50% 50px no-repeat;
+  background: url(../img/why-icon-icon2h.png) 50% 50px no-repeat, -webkit-gradient(linear, left top, left bottom, from(#59c3f8), to(#367eee));
+  background: url(../img/why-icon-icon2h.png) 50% 50px no-repeat, linear-gradient(to bottom, #59c3f8, #367eee);
 }
 
 .why-icon .container .why-icon-list .why-icon-item:nth-child(2):hover h2 {
@@ -1786,9 +1784,8 @@ body .container {
 
 .why-icon .container .why-icon-list .why-icon-item:nth-child(3):hover {
   padding: 160px 30px 50px;
-  -webkit-box-shadow: inset 0 0 150px 100px #3780EE;
-  box-shadow: inset 0 0 150px 100px #3780EE;
-  background: url(../img/why-icon-icon3h.png) 50% 50px no-repeat;
+  background: url(../img/why-icon-icon3h.png) 50% 50px no-repeat, -webkit-gradient(linear, left top, left bottom, from(#59c3f8), to(#367eee));
+  background: url(../img/why-icon-icon3h.png) 50% 50px no-repeat, linear-gradient(to bottom, #59c3f8, #367eee);
 }
 
 .why-icon .container .why-icon-list .why-icon-item:nth-child(3):hover h2 {
@@ -1801,9 +1798,8 @@ body .container {
 
 .why-icon .container .why-icon-list .why-icon-item:nth-child(4):hover {
   padding: 160px 30px 50px;
-  -webkit-box-shadow: inset 0 0 150px 100px #3780EE;
-  box-shadow: inset 0 0 150px 100px #3780EE;
-  background: url(../img/why-icon-icon4h.png) 50% 50px no-repeat;
+  background: url(../img/why-icon-icon4h.png) 50% 50px no-repeat, -webkit-gradient(linear, left top, left bottom, from(#59c3f8), to(#367eee));
+  background: url(../img/why-icon-icon4h.png) 50% 50px no-repeat, linear-gradient(to bottom, #59c3f8, #367eee);
 }
 
 .why-icon .container .why-icon-list .why-icon-item:nth-child(4):hover h2 {
@@ -1816,9 +1812,8 @@ body .container {
 
 .why-icon .container .why-icon-list .why-icon-item:nth-child(5):hover {
   padding: 160px 30px 50px;
-  -webkit-box-shadow: inset 0 0 150px 100px #3780EE;
-  box-shadow: inset 0 0 150px 100px #3780EE;
-  background: url(../img/why-icon-icon5h.png) 50% 50px no-repeat;
+  background: url(../img/why-icon-icon5h.png) 50% 50px no-repeat, -webkit-gradient(linear, left top, left bottom, from(#59c3f8), to(#367eee));
+  background: url(../img/why-icon-icon5h.png) 50% 50px no-repeat, linear-gradient(to bottom, #59c3f8, #367eee);
 }
 
 .why-icon .container .why-icon-list .why-icon-item:nth-child(5):hover h2 {
@@ -1831,9 +1826,8 @@ body .container {
 
 .why-icon .container .why-icon-list .why-icon-item:nth-child(6):hover {
   padding: 160px 30px 50px;
-  -webkit-box-shadow: inset 0 0 150px 100px #3780EE;
-  box-shadow: inset 0 0 150px 100px #3780EE;
-  background: url(../img/why-icon-icon6h.png) 50% 50px no-repeat;
+  background: url(../img/why-icon-icon6h.png) 50% 50px no-repeat, -webkit-gradient(linear, left top, left bottom, from(#59c3f8), to(#367eee));
+  background: url(../img/why-icon-icon6h.png) 50% 50px no-repeat, linear-gradient(to bottom, #59c3f8, #367eee);
 }
 
 .why-icon .container .why-icon-list .why-icon-item:nth-child(6):hover h2 {
