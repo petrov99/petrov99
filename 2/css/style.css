@@ -205,6 +205,10 @@ body .container {
   font-size: 0;
 }
 
+.profile {
+  margin-bottom: 80px;
+}
+
 .profile .container h1 {
   font-family: "StolzlRegular", sans-serif;
   font-weight: 400;
@@ -610,6 +614,10 @@ body .container {
   font-size: 15px;
   color: #fff;
   border: none;
+}
+
+.ticket {
+  margin-bottom: 100px;
 }
 
 .ticket .container h1 {
@@ -1148,6 +1156,10 @@ body .container {
 .ticket .container .ticket__bottom .ticket__bottom-right table tbody tr:hover {
   background: #1cda58;
   cursor: pointer;
+}
+
+.ref {
+  margin-bottom: 100px;
 }
 
 .ref .container h1 {
@@ -2154,6 +2166,10 @@ body .container {
   transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
+.promo {
+  margin-bottom: 100px;
+}
+
 .promo h1 {
   font-family: "StolzlRegular", sans-serif;
   font-size: 21px;
@@ -2310,6 +2326,10 @@ body .container {
   color: #fff;
 }
 
+.new {
+  margin-bottom: 100px;
+}
+
 .new__top h1 {
   font-family: "StolzlRegular", sans-serif;
   font-size: 21px;
@@ -2385,6 +2405,10 @@ body .container {
 .new__bottom-right {
   padding-right: 30px;
   background: url(../img/admin/new-arrow-right.png) right 50% no-repeat;
+}
+
+.news {
+  margin-bottom: 100px;
 }
 
 .news .container h1 {
@@ -2495,6 +2519,10 @@ body .container {
   text-align: center;
 }
 
+.settings {
+  margin-bottom: 100px;
+}
+
 .settings .container h1 {
   font-family: "StolzlRegular", sans-serif;
   font-size: 21px;
@@ -2512,7 +2540,7 @@ body .container {
 .settings__list-form1 {
   -ms-flex-preferred-size: 50%;
   flex-basis: 50%;
-  margin-right: 40px;
+  margin-right: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2712,7 +2740,11 @@ body .container {
 }
 
 .footer {
-  margin-top: 115px;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 .footer .container nav {
@@ -2725,7 +2757,7 @@ body .container {
 }
 
 .footer .container ul {
-  padding: 25px 0;
+  padding: 15px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2911,8 +2943,8 @@ body .container {
 
 .footer .container li:hover {
   border-radius: 5px;
-  -webkit-box-shadow: 0 0 0 20px #3a76df;
-  box-shadow: 0 0 0 20px #3a76df;
+  -webkit-box-shadow: 0 0 0 15px #3a76df;
+  box-shadow: 0 0 0 15px #3a76df;
 }
 
 .popup {
@@ -3207,8 +3239,8 @@ body .container {
     margin-bottom: 50px;
   }
 
-  .footer {
-    width: auto;
+  .footer .container nav {
+    width: 500px;
   }
 }
 
@@ -3238,6 +3270,10 @@ body .container {
 
   .promo__tab-content {
     padding: 20px 0;
+  }
+
+  .footer .container nav {
+    width: 400px;
   }
 }
 
@@ -3293,12 +3329,16 @@ body .container {
     flex-basis: 100%;
   }
 
+  .footer .container nav {
+    width: 300px;
+  }
+
   .footer .container ul {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
