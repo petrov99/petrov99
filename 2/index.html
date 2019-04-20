@@ -109,8 +109,8 @@
 							</div>
 
 							<div class="profile__left-in-out-balance">
-								<button class="in-balance js-in-balance" type="button">Пополнить баланс</button>
-								<button class="out-balance js-out-balance" type="button">Вывести средства</button>
+								<button class="in-balance js-out-balance" type="button">Пополнить баланс</button>
+								<button class="out-balance js-in-balance" type="button">Вывести средства</button>
 							</div>
 						</div>
 					</div>
@@ -172,7 +172,7 @@
 								</div>
 
 								<div class="profile__right-top-transaction-bottom">
-									
+
 									<div class="profile__right-top-transaction-bottom-item">
 										<div class="profile__right-top-transaction-bottom-item-left">
 											<p>Начисление дохода</p>
@@ -295,10 +295,289 @@
 
 
 
+
+
+		<!-- popup-in-balance Вывод средств -->
+		<div class="popup-in-balance">
+			<h3>Вывод средств</h3>
+			<p>Внимание! Ваши средства поступят по указанным реквизитам в выходной день.</p>
+
+			<form action="?add=pay" class="out-money" method="POST">
+
+				<div class="popup-in-balance__methods">
+					<div class="popup-in-balance__method1">
+						<label class="perf">
+						  <img src="img/admin/ellipse.png">
+						  <input class="radio" type="radio" name="payps" checked="" value="1">
+							<span class="radio-custom"></span>
+
+							<span class="label"><img src="img/admin/pm.png" alt="Perfect Money"></span>
+							Perfect Money
+						</label>
+
+						<!-- <label class="adv">
+						  <img src="img/admin/ellipse.png">
+							<input class="radio" type="radio" name="payps" value="4">
+							<span class="radio-custom"></span>
+
+							<span class="label"><img src="img/admin/adv.png" alt="adv" hidden="" style="display: none !important;"></span>
+							Advanced Cash
+						</label> -->
+
+	          <label class="payeer">
+              <img src="img/admin/ellipse.png">
+							<input class="radio" type="radio" name="payps" value="2">
+							<span class="radio-custom"></span>
+
+							<span class="label"><img src="img/admin/payeer.png" alt="payeer"></span>
+							Payeer
+						</label>
+					</div>
+
+					<!-- <div class="popup-in-balance__method2">
+						<label class="ya">
+						  <img src="img/admin/ellipse.png">
+						  <input class="radio" type="radio" name="payps" checked="" value="5">
+							<span class="radio-custom"></span>
+
+							<span class="label"><img src="img/admin/ya.png" alt="ya Money"></span>
+						</label>
+
+						<label class="visa">
+						  <img src="img/admin/ellipse.png">
+							<input class="radio" type="radio" name="payps" value="6">
+							<span class="radio-custom"></span>
+
+							<span class="label"><img src="img/admin/visa.png" alt="visa"></span>
+						</label>
+
+            <label class="qiwi">
+              <img src="img/admin/ellipse.png">
+							<input class="radio" type="radio" name="payps" value="7">
+							<span class="radio-custom"></span>
+
+							<span class="label"><img src="img/admin/qiwi.png" alt="qiwi"></span>
+						</label>
+
+						<label class="master">
+              <img src="img/admin/ellipse.png">
+							<input class="radio" type="radio" name="payps" value="8">
+							<span class="radio-custom"></span>
+
+							<span class="label"><img src="img/admin/master.png" alt="payeer"></span>
+						</label>
+					</div> -->
+				</div>
+
+	      <div class="popup-in-balance__sum_number">
+					<div class="popup-in-balance__sum">
+						<div class="popup-in-balance__text">
+							Сумма вывода в USD
+						</div>
+						<div class="popup-in-balance__input">
+							<input type="text" placeholder="0" required="" value="" name="paysum" id="sum">
+						</div>
+					</div>
+
+					<div class="popup-in-balance__number">
+						<div class="popup-in-balance__text">
+							Кошелек вывода
+						</div>
+						<div class="popup-in-balance__input2">
+							<input type="text" placeholder="" required="" name="paypurse" id="paypurse">
+						</div>
+					</div>
+
+					<div class="popup-in-balance__button">
+						<p style="margin-bottom: 16px;">
+							<font style="font-size: 11px; color: #fa2525;">Комиссия на вывод 1.5%</font>
+						</p>
+						<button type="submit">Вывести</button>
+					</div>
+				</div>
+
+			</form>
+
+			<button type="button" class="close js-close-popup-in-balance"></button>
+		</div>
+		<div class="popup-in-balance-overlay"></div>
+
+
+
+
+		<!-- popup-out-balance Пополнение баланса -->
+		<div class="popup-out-balance">
+			<h3>Пополнение баланса</h3>
+			<p>Внимание! Ваши средства поступят сразу же после перевода.</p>
+
+			<form action="?add=pay" class="in-money" method="POST">
+
+				<div class="popup-out-balance__methods">
+					<div class="popup-out-balance__method1">
+						<label class="perf">
+						  <img src="img/admin/ellipse.png">
+						  <input class="radio" type="radio" name="payps" checked="" value="1">
+							<span class="radio-custom"></span>
+
+							<span class="label"><img src="img/admin/pm.png" alt="Perfect Money"></span>
+							Perfect Money
+						</label>
+
+						<!-- <label class="adv">
+						  <img src="img/admin/ellipse.png">
+							<input class="radio" type="radio" name="payps" value="4">
+							<span class="radio-custom"></span>
+
+							<span class="label"><img src="img/admin/adv.png" alt="adv" hidden="" style="display: none !important;"></span>
+							Advanced Cash
+						</label> -->
+
+	          <label class="payeer">
+              <img src="img/admin/ellipse.png">
+							<input class="radio" type="radio" name="payps" value="2">
+							<span class="radio-custom"></span>
+
+							<span class="label"><img src="img/admin/payeer.png" alt="payeer"></span>
+							Payeer
+						</label>
+					</div>
+
+					<!-- <div class="popup-out-balance__method2">
+						<label class="ya">
+						  <img src="img/admin/ellipse.png">
+						  <input class="radio" type="radio" name="payps" checked="" value="5">
+							<span class="radio-custom"></span>
+
+							<span class="label"><img src="img/admin/ya.png" alt="ya Money"></span>
+						</label>
+
+						<label class="visa">
+						  <img src="img/admin/ellipse.png">
+							<input class="radio" type="radio" name="payps" value="6">
+							<span class="radio-custom"></span>
+
+							<span class="label"><img src="img/admin/visa.png" alt="visa"></span>
+						</label>
+
+            <label class="qiwi">
+              <img src="img/admin/ellipse.png">
+							<input class="radio" type="radio" name="payps" value="7">
+							<span class="radio-custom"></span>
+
+							<span class="label"><img src="img/admin/qiwi.png" alt="qiwi"></span>
+						</label>
+
+						<label class="master">
+              <img src="img/admin/ellipse.png">
+							<input class="radio" type="radio" name="payps" value="8">
+							<span class="radio-custom"></span>
+
+							<span class="label"><img src="img/admin/master.png" alt="payeer"></span>
+						</label>
+					</div> -->
+				</div>
+
+	      <div class="popup-out-balance__sum_number">
+					<div class="popup-out-balance__sum">
+						<div class="popup-out-balance__text">
+							Сумма пополнения в USD
+						</div>
+						<div class="popup-out-balance__input">
+							<input type="text" placeholder="0" required="" value="" name="paysum" id="sum">
+						</div>
+					</div>
+
+					<!-- <div class="popup-out-balance__number">
+						<div class="popup-out-balance__text">
+							Кошелек вывода
+						</div>
+						<div class="popup-out-balance__input2">
+							<input type="text" placeholder="" required="" name="paypurse" id="paypurse">
+						</div>
+					</div> -->
+
+					<div class="popup-out-balance__button">
+						<p style="margin-bottom: 16px;">
+							<font style="font-size: 11px; color: #fa2525;">Комиссия на вывод 1.5%</font>
+						</p>
+						<button type="submit">Пополнить</button>
+					</div>
+				</div>
+
+			</form>
+
+			<button type="button" class="close js-close-popup-out-balance"></button>
+		</div>
+		<div class="popup-out-balance-overlay"></div>
+
+
+
+
+
 		<!-- scripts -->
+		<!-- <script>
+			//цепляем событие на onclick кнопки
+			var button = document.getElementById('userButton');
+			button.addEventListener('click', function () {
+			  //нашли наш контейнер
+			  var ta = document.getElementById('cont');
+			  //производим его выделение
+			  var range = document.createRange();
+			  range.selectNode(ta);
+			  window.getSelection().addRange(range);
+
+			  //пытаемся скопировать текст в буфер обмена
+			  try {
+			    document.execCommand('copy');
+			  } catch(err) {
+			    console.log('Can`t copy, boss');
+			  }
+			  //очистим выделение текста, чтобы пользователь "не парился"
+			  window.getSelection().removeAllRanges();
+			});
+		</script> -->
+
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<!-- <script src="libs/wow.min.js"></script> -->
 		<script src="libs/jquery.magnific-popup/jquery.magnific-popup.min.js"></script>
+
+		<script src="libs/owl/owl.carousel.min.js"></script>
+		<script>
+			$(document).ready(function() {
+			  $(".owl-carousel").owlCarousel({
+			  	items: 5,
+			  	margin: 10
+			  });
+
+		  	var accordionsMenu = $('.cd-accordion-menu');
+		  	if( accordionsMenu.length > 0 ) {
+		  		accordionsMenu.each(function(){
+		  			var accordion = $(this);
+		  			//detect change in the input[type="checkbox"] value
+		  			accordion.on('change', 'input[type="checkbox"]', function(){
+		  				var checkbox = $(this);
+		  				// console.log(checkbox.prop('checked'));
+		  				( checkbox.prop('checked') ) ? checkbox.siblings('ul').attr('style', 'display:none;').slideDown(300) : checkbox.siblings('ul').attr('style', 'display:block;').slideUp(300);
+		  			});
+		  		});
+		  	}
+
+		  	function _saveimg(){
+			  	$("#file").click();
+			  }
+
+			  function _save(){
+			  	$("#go").submit();
+		  	}
+			});
+		</script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.4.0/clipboard.min.js"></script>
+		<script>
+			(function(){
+				new Clipboard('#copy-button');
+			})();
+		</script>
 
 		<script src="js/index-page.js"></script>
 	</body>

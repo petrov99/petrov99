@@ -134,13 +134,13 @@
 								<a href="https://www.youtube.com/" target="_blank" class="second">Открыть на YouTube</a>
 							</div>
 
-							<div class="promo__tab-item2-inner">
+							<!-- <div class="promo__tab-item2-inner">
 								<a href="img/admin/promo-bg6.jpg" class="first popup-link1">
 									<img src="img/admin/promo-bg6.jpg" alt="Icon trade. Invest company">
 								</a>
 								<p>Все о бонусах и рангах</p>
 								<a href="https://www.youtube.com/" target="_blank" class="second" download>Открыть на YouTube</a>
-							</div>
+							</div> -->
 
 						</div>
 
@@ -199,6 +199,44 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<!-- <script src="libs/wow.min.js"></script> -->
 		<script src="libs/jquery.magnific-popup/jquery.magnific-popup.min.js"></script>
+
+		<script src="libs/owl/owl.carousel.min.js"></script>
+		<script>
+			$(document).ready(function() {
+			  $(".owl-carousel").owlCarousel({
+			  	items: 5,
+			  	margin: 10
+			  });
+
+		  	var accordionsMenu = $('.cd-accordion-menu');
+		  	if( accordionsMenu.length > 0 ) {
+		  		accordionsMenu.each(function(){
+		  			var accordion = $(this);
+		  			//detect change in the input[type="checkbox"] value
+		  			accordion.on('change', 'input[type="checkbox"]', function(){
+		  				var checkbox = $(this);
+		  				// console.log(checkbox.prop('checked'));
+		  				( checkbox.prop('checked') ) ? checkbox.siblings('ul').attr('style', 'display:none;').slideDown(300) : checkbox.siblings('ul').attr('style', 'display:block;').slideUp(300);
+		  			});
+		  		});
+		  	}
+
+		  	function _saveimg(){
+			  	$("#file").click();
+			  	}
+
+			  	function _save(){
+			  	$("#go").submit();
+		  	}
+			});
+		</script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.4.0/clipboard.min.js"></script>
+		<script>
+			(function(){
+				new Clipboard('#copy-button');
+			})();
+		</script>
 
 		<script src="js/index-page.js"></script>
 	</body>

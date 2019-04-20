@@ -4,6 +4,118 @@ $(function() {
 
 
 
+
+	// js-in-balance вывести средства
+	$('.js-in-balance').on('click', function(e) {
+	  // e.preventDefault();
+	  $(window).scrollTop(0);
+
+	  $('.popup-in-balance').slideDown();
+	  $('.popup-in-balance-overlay').css('display', 'block');
+	  
+	  // поиск button close popup
+	  $('.js-close-popup-in-balance, .popup-in-balance-overlay').on('click', function(e) {
+			// $('.popup').css('display', 'none');
+			// $('.popup-overlay').css('display', 'none');
+			// or
+			$('.popup-in-balance').slideUp('300', function() {
+				
+				// stop iframe video play after close popup
+				// var video = $(".popup iframe").attr("src");
+				// $(".popup iframe").attr("src", "");
+				// $(".popup iframe").attr("src", video);
+			});
+			$('.popup-in-balance-overlay').css('display', 'none');
+			// $('.popup').find("input").val("");
+	  });
+	});
+
+	// выбор check для popup
+	$('.popup-in-balance__method1 >label, .popup-in-balance__method2 >label').on('click', function(e) {
+		$('.popup-in-balance__method1 .perf >img').css('display', 'none');
+		$('.popup-in-balance__method1 .adv >img').css('display', 'none');
+		$('.popup-in-balance__method1 .payeer >img').css('display', 'none');
+		$('.popup-in-balance__method1 .ya >img').css('display', 'none');
+		$('.popup-in-balance__method1 .visa >img').css('display', 'none');
+		$('.popup-in-balance__method1 .master >img').css('display', 'none');
+
+		$('.popup-in-balance__method2 .perf >img').css('display', 'none');
+		$('.popup-in-balance__method2 .adv >img').css('display', 'none');
+		$('.popup-in-balance__method2 .payeer >img').css('display', 'none');
+		$('.popup-in-balance__method2 .ya >img').css('display', 'none');
+		$('.popup-in-balance__method2 .visa >img').css('display', 'none');
+		$('.popup-in-balance__method2 .master >img').css('display', 'none');
+
+		$(this).find('>img').show(200);
+	});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	// js-out-balance Пополнение баланса
+	$('.js-out-balance').on('click', function(e) {
+	  // e.preventDefault();
+	  $(window).scrollTop(0);
+
+	  $('.popup-out-balance').slideDown();
+	  $('.popup-out-balance-overlay').css('display', 'block');
+	  
+	  // поиск button close popup
+	  $('.js-close-popup-out-balance, .popup-out-balance-overlay').on('click', function(e) {
+			// $('.popup').css('display', 'none');
+			// $('.popup-overlay').css('display', 'none');
+			// or
+			$('.popup-out-balance').slideUp('300', function() {
+				
+				// stop iframe video play after close popup
+				// var video = $(".popup iframe").attr("src");
+				// $(".popup iframe").attr("src", "");
+				// $(".popup iframe").attr("src", video);
+			});
+			$('.popup-out-balance-overlay').css('display', 'none');
+			// $('.popup').find("input").val("");
+	  });
+	});
+
+	// выбор check для popup
+	$('.popup-out-balance__method1 >label, .popup-out-balance__method2 >label').on('click', function(e) {
+		$('.popup-out-balance__method1 .perf >img').css('display', 'none');
+		$('.popup-out-balance__method1 .adv >img').css('display', 'none');
+		$('.popup-out-balance__method1 .payeer >img').css('display', 'none');
+		$('.popup-out-balance__method1 .ya >img').css('display', 'none');
+		$('.popup-out-balance__method1 .visa >img').css('display', 'none');
+		$('.popup-out-balance__method1 .master >img').css('display', 'none');
+
+		$('.popup-out-balance__method2 .perf >img').css('display', 'none');
+		$('.popup-out-balance__method2 .adv >img').css('display', 'none');
+		$('.popup-out-balance__method2 .payeer >img').css('display', 'none');
+		$('.popup-out-balance__method2 .ya >img').css('display', 'none');
+		$('.popup-out-balance__method2 .visa >img').css('display', 'none');
+		$('.popup-out-balance__method2 .master >img').css('display', 'none');
+
+		$(this).find('>img').show(200);
+	});
+
+
+
+
+
+
+
+
+
 	// tabs
 	$(".promo__tab-item").not(":first").hide();
 	$(".promo__tab").click(function() {
@@ -25,6 +137,14 @@ $(function() {
 			duration: 300 // продолжительность анимации. Не меняйте данный параметр также и в CSS
 		},
 	  // other options
+	});
+
+
+
+	$('.ref-list-js').on('click', function(e) {
+		e.preventDefault();
+
+		$('.ref__reflist').slideToggle();
 	});
 
 
