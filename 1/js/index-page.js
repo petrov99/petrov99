@@ -102,6 +102,9 @@ $(function() {
 	$('.example__left-top-right-buttons button').on('click', function(e) {
 		currentSymbol = $(this).attr('data-current');
 
+		$('.example__left-top-right-buttons button').css({"border":"2px solid #fff", "background":"transparent"});
+		$(this).css({"border":"2px solid transparent", "background":"linear-gradient(to right, #3494e6, #ec6ead)"});
+
 		process();
 	});
 
