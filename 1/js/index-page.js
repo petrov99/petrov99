@@ -40,7 +40,7 @@ $(function() {
 	var procentAll = 110;
 	var procent = 1;
 	var week = 2;
-	var days = 14;
+	var days = 10; // 14
 	var currentSymbol = '$';
 	var amount = 0;
 	var min = 10;
@@ -81,7 +81,7 @@ $(function() {
 			procentAll = 110;
 			procent = 1;
 			week = 2;
-			days = 14;
+			days = 10; //14
 
 			min = 10;
 			max = 100;	
@@ -90,10 +90,10 @@ $(function() {
 			procentAll = 157;
 			procent = 2.88;
 			week = 8;
-			days = 56;
+			days = 40; // 56
 
 			min = 101;
-			max = 400;
+			max = 10000;
 		}
 
 		process();
