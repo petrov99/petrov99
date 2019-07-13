@@ -37,7 +37,7 @@ $(function() {
 
 
 	// calc example
-	var procentAll = 110;
+	var procentAll = 1.10;
 	var procent = 1;
 	var week = 2;
 	var days = 10; // 14
@@ -73,12 +73,12 @@ $(function() {
 		$('.example__right .date span').text(date);
 		
 		// Total profit
-		$('.example__right h4').text((amount*procent*days).toFixed(2)+' '+currentSymbol);
+		$('.example__right h4').text((amount*procentAll).toFixed(2)+' '+currentSymbol);
 	}
 
 	$('.slider').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
 		if(nextSlide == 0) {
-			procentAll = 110;
+			procentAll = 1.1;
 			procent = 1;
 			week = 2;
 			days = 10; //14
@@ -87,7 +87,7 @@ $(function() {
 			max = 100;	
 		}
 		if(nextSlide == 1) {
-			procentAll = 157;
+			procentAll = 1.57;
 			procent = 2.88;
 			week = 8;
 			days = 40; // 56
