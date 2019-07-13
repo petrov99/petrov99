@@ -96,6 +96,9 @@ $(function() {
 			max = 10000;
 		}
 
+		$('.example__right input').attr('min', min);
+		$('.example__right input').attr('max', max);
+
 		process();
 	});
 
@@ -110,9 +113,29 @@ $(function() {
 
 	$('.example__right input').on('input', function(e) {
 		amount = Math.abs(Number($(this).val()));
+		
+		$(this).attr('min', min);
+		$(this).attr('max', max);
 
 		process();
 	});
+
+	$('.example__right input').on('blur', function(e) {
+		amount = Math.abs(Number($(this).val()));
+
+		if(week == 2) {
+			if(amount < 10) { amount = 10; $(this).val(amount); }
+			if(amount > 100) { amount = 100;  $(this).val(amount); }
+		}
+		if(week == 8) {
+			if(amount < 101) { amount = 101;  $(this).val(amount); }
+			if(amount > 1000) { amount = 1000;  $(this).val(amount); }
+		}
+
+		process();
+	});
+
+
 
 	// for test only
 	$('.js-example-open-deposit').on('click', function(e) {
