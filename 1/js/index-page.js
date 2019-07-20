@@ -84,7 +84,8 @@ $(function() {
 			days = 10; //14
 
 			min = 10;
-			max = 100;	
+			max = 100;
+			$('.example__right input').val(10);
 		}
 		if(nextSlide == 1) {
 			procentAll = 1.57;
@@ -94,6 +95,7 @@ $(function() {
 
 			min = 101;
 			max = 10000;
+			$('.example__right input').val(101);
 		}
 
 		$('.example__right input').attr('min', min);
@@ -111,7 +113,7 @@ $(function() {
 		process();
 	});
 
-	$('.example__right input').on('input', function(e) {
+	$('.example__right input').on('change', function(e) {
 		amount = Math.abs(Number($(this).val()));
 		
 		$(this).attr('min', min);
@@ -121,6 +123,22 @@ $(function() {
 	});
 
 	$('.example__right input').on('blur', function(e) {
+		amount = Math.abs(Number($(this).val()));
+
+		if(week == 2) {
+			if(amount < 10) { amount = 10; $(this).val(amount); }
+			if(amount > 100) { amount = 100;  $(this).val(amount); }
+		}
+		if(week == 8) {
+			if(amount < 101) { amount = 101;  $(this).val(amount); }
+			if(amount > 10000) { amount = 10000;  $(this).val(amount); }
+		}
+
+		process();
+	});
+
+
+	$('.example__right input').on('keyup', function(e) {
 		amount = Math.abs(Number($(this).val()));
 
 		if(week == 2) {
