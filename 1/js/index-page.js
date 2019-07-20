@@ -106,7 +106,7 @@ $(function() {
 		currentSymbol = $(this).attr('data-current');
 
 		$('.example__left-top-right-buttons button').css({"border":"2px solid #fff", "background":"transparent"});
-		$(this).css({"border":"2px solid #3494e6", "background":"linear-gradient(to right, #3494e6, #ec6ead)"});
+		$(this).css({"border":"2px solid transparent", "background":"#15c39a"});
 
 		process();
 	});
@@ -155,22 +155,155 @@ $(function() {
 
 
 
-	// popup
-	// ставим на кнопку которая вызывает данный popup
-	// $('.js-popup').on('click', function(e) {
-	//   e.preventDefault();
+	// login
+	$('.js-popup').on('click', function(e) {
+	  e.preventDefault();
 
-	//   $('.popup').slideDown();
-	//   $('.popup-overlay').css('display', 'block');
+	  $('.popup').slideDown();
+	  $('.popup-overlay').css('display', 'block');
 	  
-	//   // поиск button close popup
-	//   $('.js-close-popup, .popup-overlay').on('click', function(e) {
-	// 		$('.popup').slideUp('300', function() {
+	  // поиск button close popup
+	  $('.js-close-popup, .popup-overlay').on('click', function(e) {
+	  	e.preventDefault();
+			$('.popup').slideUp('300', function() {
 				
-	// 		});
-	// 		$('.popup-overlay').css('display', 'none');
-	//   });
-	// });
+			});
+			$('.popup-overlay').css('display', 'none');
+	  });
+	});
+
+	// sing-up
+	$('.js-popup2').on('click', function(e) {
+	  e.preventDefault();
+
+	  $('.popup2').slideDown();
+	  $('.popup-overlay').css('display', 'block');
+	  
+	  // поиск button close popup
+	  $('.js-close-popup, .popup-overlay').on('click', function(e) {
+	  	e.preventDefault();
+			$('.popup2').slideUp('300', function() {
+				
+			});
+			$('.popup-overlay').css('display', 'none');
+	  });
+	});
+
+	// forgot password
+	$('.js-popup3').on('click', function(e) {
+	  e.preventDefault();
+
+	  $('.popup3').slideDown();
+	  $('.popup-overlay').css('display', 'block');
+	  
+	  // поиск button close popup
+	  $('.js-close-popup, .popup-overlay').on('click', function(e) {
+	  	e.preventDefault();
+			$('.popup3').slideUp('300', function() {
+				
+			});
+			$('.popup-overlay').css('display', 'none');
+	  });
+	});
+
+	// forgot password email
+	$('.js-popup4').on('click', function(e) {
+	  e.preventDefault();
+
+	  $('.popup4').slideDown();
+	  $('.popup-overlay').css('display', 'block');
+	  
+	  // поиск button close popup
+	  $('.js-close-popup, .popup-overlay').on('click', function(e) {
+	  	e.preventDefault();
+			$('.popup4').slideUp('300', function() {
+				
+			});
+			$('.popup-overlay').css('display', 'none');
+	  });
+	});
+
+	// reset password
+	$('.js-popup5').on('click', function(e) {
+	  e.preventDefault();
+
+	  $('.popup5').slideDown();
+	  $('.popup-overlay').css('display', 'block');
+	  
+	  // поиск button close popup
+	  $('.js-close-popup, .popup-overlay').on('click', function(e) {
+	  	e.preventDefault();
+			$('.popup5').slideUp('300', function() {
+				
+			});
+			$('.popup-overlay').css('display', 'none');
+	  });
+	});
+
+
+
+	// .js-close-this-open-login
+	$('.js-close-this-open-login').on('click', function(e) {
+	  e.preventDefault();
+		
+		// close-this
+		$('.popupall').find('.js-close-popup').trigger('click');
+
+		// open login
+	  $('.popup').slideDown();
+	  $('.popup-overlay').css('display', 'block');
+	  
+	  // поиск button close popup
+	  $('.js-close-popup, .popup-overlay').on('click', function(e) {
+	  	e.preventDefault();
+			$('.popup').slideUp('300', function() {
+				
+			});
+			$('.popup-overlay').css('display', 'none');
+	  });
+	});
+
+	// .js-close-this-open-signup
+	$('.js-close-this-open-signup').on('click', function(e) {
+	  e.preventDefault();
+		
+		// close-this
+		$('.popupall').find('.js-close-popup').trigger('click');
+
+		// open signup
+	  $('.popup2').slideDown();
+	  $('.popup-overlay').css('display', 'block');
+	  
+	  // поиск button close popup
+	  $('.js-close-popup, .popup-overlay').on('click', function(e) {
+	  	e.preventDefault();
+			$('.popup2').slideUp('300', function() {
+				
+			});
+			$('.popup-overlay').css('display', 'none');
+	  });
+	});
+
+	// .js-close-this-open-forgot
+	$('.js-close-this-open-forgot').on('click', function(e) {
+	  e.preventDefault();
+		
+		// close-this
+		$('.popupall').find('.js-close-popup').trigger('click');
+
+		// open forgot
+	  $('.popup3').slideDown();
+	  $('.popup-overlay').css('display', 'block');
+	  
+	  // поиск button close popup
+	  $('.js-close-popup, .popup-overlay').on('click', function(e) {
+	  	e.preventDefault();
+			$('.popup3').slideUp('300', function() {
+				
+			});
+			$('.popup-overlay').css('display', 'none');
+	  });
+	});
 
 
 
