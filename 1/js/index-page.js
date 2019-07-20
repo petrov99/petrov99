@@ -129,7 +129,7 @@ $(function() {
 		}
 		if(week == 8) {
 			if(amount < 101) { amount = 101;  $(this).val(amount); }
-			if(amount > 1000) { amount = 1000;  $(this).val(amount); }
+			if(amount > 10000) { amount = 10000;  $(this).val(amount); }
 		}
 
 		process();
