@@ -62,6 +62,7 @@ body a {
 }
 
 body a:hover {
+  text-decoration: none;
   opacity: .8;
 }
 
@@ -123,7 +124,8 @@ body .container {
 }
 
 .header__logo img {
-  width: 145px;
+  width: 195px;
+  fill: #fff;
 }
 
 .header__menu {
@@ -147,8 +149,11 @@ body .container {
   margin-right: 25px;
 }
 
+.header__menu li a {
+  text-decoration: none;
+}
+
 .header__menu li.active {
-  text-decoration: underline;
   color: #fff;
 }
 
@@ -171,9 +176,14 @@ body .container {
   color: #fff;
   border: none;
   background: transparent;
-  padding: 9px 25px;
+  padding: 6px 25px;
   border: 2px solid #15c39a;
-  border-radius: 20px;
+  border-radius: 30px;
+}
+
+.header__login-reg button:hover,
+.header__login-reg a:hover {
+  text-decoration: none;
 }
 
 .promo {
@@ -206,8 +216,8 @@ body .container {
   margin-top: 22px;
   border: none;
   background: #15c39a;
-  padding: 12px 32px;
-  border-radius: 20px;
+  padding: 9px 40px;
+  border-radius: 30px;
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
@@ -226,8 +236,8 @@ body .container {
 }
 
 .exchange span {
-  display: inline-block;
-  vertical-align: top;
+  display: inline;
+  vertical-align: middle;
   font-weight: 400;
   font-size: 18px;
   color: #fff;
@@ -354,6 +364,11 @@ body .container {
   background: url(../img/example-bg.jpg) 50% 0 no-repeat;
   background-size: cover;
   padding: 105px 0;
+}
+
+.example-investments {
+  background: url(../img/example-bg2.jpg) 50% 0 no-repeat;
+  background-size: cover;
 }
 
 .example .container {
@@ -514,7 +529,7 @@ body .container {
 .example__right {
   width: 312px;
   float: right;
-  padding: 110px 40px;
+  padding: 110px 48px;
   position: absolute;
   right: 0;
   top: -140px;
@@ -608,9 +623,9 @@ body .container {
   margin-top: 20px;
   border: none;
   background: #15c39a;
-  padding: 10px 0;
-  width: 85%;
-  border-radius: 20px;
+  padding: 9px 0;
+  width: 100%;
+  border-radius: 30px;
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
@@ -741,6 +756,11 @@ body .container {
   padding: 110px 0;
 }
 
+.cryptos-investments {
+  background: url(../img/crypros-bg2.jpg) 50% 0 no-repeat;
+  background-size: cover;
+}
+
 .cryptos__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -856,6 +876,7 @@ body .container {
   width: 49%;
   padding: 14px;
   border-radius: 12px;
+  font-family: 'Montserrat', sans-serif;
   border: none;
   background: #f4f5f9;
   font-size: 16px;
@@ -890,6 +911,7 @@ body .container {
 .feedback__right form textarea {
   width: 100%;
   resize: none;
+  font-family: 'Montserrat', sans-serif;
   padding: 14px;
   border-radius: 15px;
   border: none;
@@ -926,6 +948,7 @@ body .container {
 }
 
 .feedback__right form button {
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: #fff;
@@ -939,7 +962,7 @@ body .container {
   transform: translateX(-50%);
   position: relative;
   top: -20px;
-  border-radius: 20px;
+  border-radius: 30px;
 }
 
 .feedback__left {
@@ -960,6 +983,158 @@ body .container {
 }
 
 .feedback__left p span {
+  color: #000;
+}
+
+.feedback-about {
+  padding: 110px 0 90px;
+  background: #f4f5f9;
+}
+
+.feedback-about .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.feedback-about__right {
+  width: 50%;
+}
+
+.feedback-about__right form {
+  width: 100%;
+}
+
+.feedback-about__inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.feedback-about__right form input {
+  width: 49%;
+  padding: 14px;
+  border-radius: 12px;
+  font-family: 'Montserrat', sans-serif;
+  border: none;
+  background: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  color: #848388;
+}
+
+.feedback-about__right form input::-webkit-input-placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  color: #848388;
+}
+
+.feedback-about__right form input:-ms-input-placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  color: #848388;
+}
+
+.feedback-about__right form input::-ms-input-placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  color: #848388;
+}
+
+.feedback-about__right form input::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  color: #848388;
+}
+
+.feedback-about__right form textarea {
+  width: 100%;
+  resize: none;
+  font-family: 'Montserrat', sans-serif;
+  padding: 14px;
+  border-radius: 15px;
+  border: none;
+  background: #fff;
+  outline: none;
+  margin-bottom: -5px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #848388;
+}
+
+.feedback-about__right form textarea::-webkit-input-placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  color: #848388;
+}
+
+.feedback-about__right form textarea:-ms-input-placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  color: #848388;
+}
+
+.feedback-about__right form textarea::-ms-input-placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  color: #848388;
+}
+
+.feedback-about__right form textarea::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  color: #848388;
+}
+
+.feedback-about__right form button {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  width: 35%;
+  text-align: center;
+  padding: 12px 0;
+  border: none;
+  background: #15c39a;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  position: relative;
+  top: -20px;
+  border-radius: 20px;
+}
+
+.feedback-about__left {
+  width: 50%;
+}
+
+.feedback-about__left p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: left;
+  color: #848388;
+  margin-bottom: 5px;
+}
+
+.feedback-about__left p:last-child {
+  margin-bottom: 0;
+}
+
+.feedback-about__left p span {
   color: #000;
 }
 
@@ -1048,6 +1223,7 @@ body .container {
   margin-bottom: 25px;
   border: none;
   background: #fff;
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: #848388;
@@ -1078,6 +1254,7 @@ body .container {
 }
 
 .feedback2__right form button {
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: #fff;
@@ -1087,8 +1264,8 @@ body .container {
   border: none;
   background: #15c39a;
   position: relative;
-  bottom: -17px;
-  border-radius: 20px;
+  bottom: -20px;
+  border-radius: 30px;
 }
 
 .future {
@@ -1116,6 +1293,7 @@ body .container {
   align-items: center;
   margin-bottom: 19px;
   background: #fff;
+  border-radius: 10px;
   position: relative;
 }
 
@@ -1254,7 +1432,7 @@ body .container {
   margin-right: 20px;
   font-size: 0;
   padding: 10px 35px;
-  border-radius: 8px;
+  border-radius: 10px;
   -webkit-clip-path: ellipse(75% 95% at 25% 50%);
   clip-path: ellipse(75% 95% at 25% 50%);
 }
@@ -1291,8 +1469,11 @@ body .container {
 }
 
 .footer__top-item li.active {
-  text-decoration: underline;
   color: #000;
+}
+
+.footer__top-item.first a:hover {
+  text-decoration: none;
 }
 
 .footer__top-item.first ul:first-child {
@@ -1373,6 +1554,10 @@ body .container {
   border-radius: 20px;
 }
 
+.footer__top-item.third a:hover {
+  text-decoration: none;
+}
+
 .arrow {
   position: fixed;
   bottom: 45px;
@@ -1429,6 +1614,10 @@ body .container {
   margin-right: 20px;
 }
 
+.login__panel-top-right a:hover {
+  text-decoration: none;
+}
+
 .login__panel-top-right a:last-child {
   margin-right: 0;
 }
@@ -1456,7 +1645,7 @@ body .container {
   padding: 12px 110px;
   border: none;
   border: 2px solid #15c39a;
-  border-radius: 10px;
+  border-radius: 30px;
   background: #fff;
   cursor: pointer;
   outline: none;
@@ -1590,7 +1779,7 @@ body .container {
   padding: 12px 44px;
   border: none;
   border: 2px solid #15c39a;
-  border-radius: 10px;
+  border-radius: 30px;
   background: #fff;
   cursor: pointer;
   outline: none;
@@ -1620,7 +1809,7 @@ body .container {
   display: inline-block;
   width: 24px;
   height: 24px;
-  background: url('../img/check.png');
+  background: url('../img/check.svg');
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -1678,6 +1867,10 @@ body .container {
   font-size: 16px;
   color: #fff;
   margin-right: 20px;
+}
+
+.sign-up__panel-top-right a:hover {
+  text-decoration: none;
 }
 
 .sign-up__panel-top-right a:last-child {
@@ -1832,7 +2025,7 @@ body .container {
   display: inline-block;
   width: 24px;
   height: 24px;
-  background: url('../img/check.png');
+  background: url('../img/check.svg');
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -1873,7 +2066,7 @@ body .container {
   padding: 12px 44px;
   border: none;
   border: 2px solid #15c39a;
-  border-radius: 10px;
+  border-radius: 30px;
   background: #fff;
   cursor: pointer;
   outline: none;
@@ -1995,8 +2188,7 @@ body .container {
 }
 
 .description-faqpage__panel:hover {
-  background: -webkit-gradient(linear, left top, right top, from(#56ccf2), to(#2f80ed));
-  background: linear-gradient(to right, #56ccf2, #2f80ed);
+  background: #15c39a;
   opacity: .8;
 }
 
@@ -2102,6 +2294,11 @@ body .container {
   position: relative;
 }
 
+.trading-investmentspage__left button.active {
+  background: #15c39a;
+  color: #fff;
+}
+
 .trading-investmentspage__left:after {
   content: '';
   position: absolute;
@@ -2115,24 +2312,31 @@ body .container {
 }
 
 .trading-investmentspage__left-top {
+  margin-bottom: 30px;
+}
+
+.trading-investmentspage__left-top button {
   background: #f4f5f9;
   border-radius: 8px;
-  margin-bottom: 30px;
   padding: 30px 0;
   text-align: center;
+  border: none;
+  width: 100%;
   font-weight: 800;
   font-size: 24px;
   color: #30343f;
 }
 
-.trading-investmentspage__left-bottom {
-  background: #15c39a;
+.trading-investmentspage__left-bottom button {
+  background: #f4f5f9;
   border-radius: 8px;
   padding: 30px 0;
   text-align: center;
+  border: none;
+  width: 100%;
   font-weight: 800;
   font-size: 24px;
-  color: #fff;
+  color: #30343f;
 }
 
 .trading-investmentspage__right {

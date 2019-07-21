@@ -34,6 +34,25 @@ $(function() {
 	  }
 	}
 
+	$('.js-basic').on('click', function(e) {
+		$('.trading-investmentspage__left button.active').removeClass('active');
+		$(this).addClass('active');
+
+		$('.trading-investmentspage__right .new2').fadeOut('slow', function() {
+			$('.trading-investmentspage__right .new1').fadeIn();
+		});
+	});
+	$('.js-test').on('click', function(e) {
+		$('.trading-investmentspage__left button.active').removeClass('active');
+		$(this).addClass('active');
+
+		$('.trading-investmentspage__right .new1').fadeOut('slow', function() {
+			$('.trading-investmentspage__right .new2').fadeIn();
+		});
+	});
+
+
+
 
 
 	// calc example

@@ -49,7 +49,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,800,900&amp;subset=cyrillic" rel="stylesheet">
 		<link rel="stylesheet" href="libs/bootstrap.css">
 
-		<link rel="stylesheet" href="css/style.css?v=1.0.4">
+		<link rel="stylesheet" href="css/style.css?v=1.0.5">
 	</head>
 
 	<body>
@@ -109,15 +109,21 @@
 			<div class="container">
 				<div class="trading-investmentspage__left">
 					<div class="trading-investmentspage__left-top">
-						Basic trading
+						<button type="button" class="active js-basic">
+							Basic trading
+						</button>
 					</div>
 					<div class="trading-investmentspage__left-bottom">
-						Test main trading
+						<button type="button" class="js-test">
+							Test main trading
+						</button>
 					</div>
 				</div>
 
 				<div class="trading-investmentspage__right">
-					The investment plan is less profitable, but has the advantage that it pays the target profit much faster. You will receive a refund of exactly 110%. We need the same minimum deposit of $1-100 to join this plan. The investment plan is designed for 14 calendar days. At the end of this period, customers will receive 110% of the return on their investment, including the principal amount. In other words, at the end of the term, customers can expect a return on their initial investment plus an additional 10% return. Example: Mr. Partner after spending $100 in 14 days will receive $110 in profit.
+					<p class="new1">This investment plan is the best and is valid for 60 working days. The interest rate is 2.6% per day - it is charged on deposits regardless of the deposit amount. During this period, you must have 60 payment days, which means that by the time the deposit expires, your total payments must have reached 156%. This means that your net profit is 56%, as this investment plan includes your principal amount. At the end of this period, interest will cease to be credited unless you invest further. Example: if you start with a deposit of $1000, you will be credited with $26 every 24 hours within 60 working days. At the end of 39 days, Mr. Partner will pass the breakeven point with a 100% refund, and at the end of this period, your balance will be a total of $ 1560.</p>
+
+					<p class="new2" style="display: none;">The investment plan is less profitable, but has the advantage that it pays the target profit much faster. You will receive a refund of exactly 110%. We need the same minimum deposit of $1-100 to join this plan. The investment plan is designed for 14 calendar days. At the end of this period, customers will receive 110% of the return on their investment, including the principal amount. In other words, at the end of the term, customers can expect a return on their initial investment plus an additional 10% return. Example: Mr. Partner after spending $100 in 14 days will receive $110 in profit.</p>
 				</div>
 			</div>
 		</div>
@@ -125,7 +131,7 @@
 
 
 		<!-- example -->
-		<div class="example">
+		<div class="example example-investments">
 			<div class="container">
 				<div class="example__left">
 					<div class="example__left-top">
@@ -231,7 +237,7 @@
 
 
 		<!-- crypros -->
-		<div class="crypros">
+		<div class="crypros cryptos-investments">
 			<div class="container">
 				<div class="cryptos__list">
 					<div class="cryptos__item wow slideInUp" data-wow-duration="1s">
