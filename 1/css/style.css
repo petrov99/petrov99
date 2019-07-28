@@ -2664,6 +2664,29 @@ body .container {
     margin: 10px 0;
   }
 
+  .promo .container {
+    background: none;
+  }
+
+  .promo .promo-list {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .promo .promo-left {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .promo .promo-left h1 {
+    padding-top: 70px;
+  }
+
+  .promo .promo-right {
+    width: 100%;
+  }
+
   .affiliate .container {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -2708,6 +2731,33 @@ body .container {
   }
 
   .feedback__right form button {
+    margin-left: 0;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  .feedback-about .container {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .feedback-about__left {
+    width: 100%;
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+
+  .feedback-about__right {
+    width: 100%;
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .feedback-about__right form button {
     margin-left: 0;
     -webkit-transform: translateX(0);
     transform: translateX(0);
@@ -2877,14 +2927,6 @@ body .container {
 @media only screen and (max-width: 767px) {
   .header__menu li {
     margin-right: 0;
-  }
-
-  .promo .container {
-    background: none;
-  }
-
-  .promo h1 {
-    padding-top: 220px;
   }
 
   .cryptos__item {

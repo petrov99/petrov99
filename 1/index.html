@@ -97,25 +97,43 @@
 			<!-- promo -->
 			<section class="promo">
 				<div class="container">
-					<h1 class="wow slideInRight" data-wow-duration="1.7s">Welcome,<br> dear partners!</h1>
-					<p class="wow slideInRight" data-wow-duration="2.2s">
-						Let me show you a video presentation about our company,<br>
-						allowing you to see all the benefits of working with us.
-					</p>
-					<!-- php -->
-					<!-- login -->
-					<a href="#" class="promo-reg wow slideInUp js-popup" data-wow-duration="2.2s">Open deposit</a>
-					<!-- singup -->
-					<!-- <a href="#" class="promo-reg wow slideInUp js-popup2" data-wow-duration="2.2s">Open deposit</a> -->
-					<!-- forgot password -->
-					<!-- <a href="#" class="promo-reg wow slideInUp js-popup3" data-wow-duration="2.2s">Open deposit</a> -->
-					<!-- forgot password email check -->
-					<!-- <a href="#" class="promo-reg wow slideInUp js-popup4" data-wow-duration="2.2s">Open deposit</a> -->
-					<!-- reset -->
-					<!-- <a href="#" class="promo-reg wow slideInUp js-popup5" data-wow-duration="2.2s">Open deposit</a> -->
-					<!-- php -->
+					<div class="promo-list" style="display: flex; justify-content: space-between; align-items: center;">
+						
+						<div class="promo-left">
+							<h1 class="wow slideInLeft" data-wow-duration="1.7s">Welcome,<br> dear partners!</h1>
+							<p class="wow slideInLeft" data-wow-duration="2.2s">
+								Let me show you a video presentation about our company,<br>
+								allowing you to see all the benefits of working with us.
+							</p>
+							<!-- php -->
+							<!-- login -->
+							<a href="#" class="promo-reg wow slideInUp js-popup" data-wow-duration="2.2s">Open deposit</a>
+							<!-- singup -->
+							<!-- <a href="#" class="promo-reg wow slideInUp js-popup2" data-wow-duration="2.2s">Open deposit</a> -->
+							<!-- forgot password -->
+							<!-- <a href="#" class="promo-reg wow slideInUp js-popup3" data-wow-duration="2.2s">Open deposit</a> -->
+							<!-- forgot password email check -->
+							<!-- <a href="#" class="promo-reg wow slideInUp js-popup4" data-wow-duration="2.2s">Open deposit</a> -->
+							<!-- reset -->
+							<!-- <a href="#" class="promo-reg wow slideInUp js-popup5" data-wow-duration="2.2s">Open deposit</a> -->
+							<!-- php -->
 
-					<!-- <button type="button" class="wow slideInUp" data-wow-duration="2.2s">Open deposit</button> -->
+							<!-- <button type="button" class="wow slideInUp" data-wow-duration="2.2s">Open deposit</button> -->
+						</div>
+
+						<div class="promo-right" style="align-self: flex-end;">
+							<video width="100%" height="320" preload="auto" controls="" style="outline: none;">
+							  <source src="pdf/pres.mp4">
+					      <object type="application/x-shockwave-flash" width="100%" height="320">
+					        <param name="movie" value="papka/flowplayer-3.2.6.swf"> 
+					        <param name="flashvars" value="config={&quot;clip&quot;:&quot;papka/name.mp4&quot;}">
+					      </object>
+							  <p>Ваш браузер не поддерживает просмотр</p> 
+							  <a href="pdf/pres.mp4">Скачать видео</a>
+							</video>
+						</div>
+
+					</div>
 				</div>
 
 				<a class="promo-arrow go_to1 wow zoomIn" href=".about">
@@ -458,6 +476,12 @@
 					<p>Phone number: <span>support@icurrent.global</span></p>
 					<p>E-mail: <span>mailcom@gmail.com</span></p>
 					<p>Adress: <span> 10 Foster Ln, London, EC2V 6HH, United Kingdom</span></p>
+
+					<div style="display: flex; justify-content: flex-start;">
+						<a style="color: #848388; margin-right: 10px; font-size: 20px;" href="pdf/CERTIFICATE.pdf" download>Certificate</a>
+						<a style="color: #848388; margin-right: 10px; font-size: 20px;" href="pdf/MEMARTS.pdf" download>Memarts</a>
+						<a style="color: #848388; font-size: 20px;" href="pdf/SHARECERTS.pdf" download>Sharecerts</a>
+					</div>
 				</div>
 
 				<div class="feedback__right wow slideInRight" data-wow-duration="1.4s">
@@ -943,7 +967,10 @@
 		  <div class="modal-dialog modal-lg" role="document">
 		    <div class="modal-content">
 		      <div class="modal-header">
-		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		        	<!-- <span aria-hidden="true">&times;</span> -->
+		        	<img src="img/close.png" alt="">
+		        </button>
 		        <h4 class="modal-title" id="myModalLabel">User Agreement</h4>
 		      </div>
 		      <div class="modal-body">
