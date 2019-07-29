@@ -25,17 +25,20 @@ $(function() {
 	    $('.arrow').show('slow', function() {
 	      //
 	    });
+	    $('.social-link').hide('slow');
 	  }
 	  else {
 	    // $('.arrow').css('display', 'none');
 	    $('.arrow').hide('slow', function() {
 	      //
 	    });
+	    $('.social-link').show('slow');
 	  }
 	}
 
 	$('.js-basic').on('click', function(e) {
 		$('.trading-investmentspage__left button.active').removeClass('active');
+		$('.trading-investmentspage__left button.active2').removeClass('active2');
 		$(this).addClass('active');
 
 		$('.trading-investmentspage__right .new2').fadeOut('slow', function() {
@@ -44,7 +47,8 @@ $(function() {
 	});
 	$('.js-test').on('click', function(e) {
 		$('.trading-investmentspage__left button.active').removeClass('active');
-		$(this).addClass('active');
+		$('.trading-investmentspage__left button.active2').removeClass('active2');
+		$(this).addClass('active2');
 
 		$('.trading-investmentspage__right .new1').fadeOut('slow', function() {
 			$('.trading-investmentspage__right .new2').fadeIn();
@@ -196,16 +200,16 @@ $(function() {
 	$('.js-popup').on('click', function(e) {
 	  e.preventDefault();
 
-	  $('.popup').slideDown();
-	  $('.popup-overlay').css('display', 'block');
+	  $('.popup').slideDown(700);
+	  $('.popup-overlay').fadeIn();
 	  
 	  // поиск button close popup
 	  $('.js-close-popup, .popup-overlay').on('click', function(e) {
 	  	e.preventDefault();
-			$('.popup').slideUp('300', function() {
+			$('.popup').slideUp(700, function() {
 				
 			});
-			$('.popup-overlay').css('display', 'none');
+			$('.popup-overlay').fadeOut();
 	  });
 	});
 
@@ -213,16 +217,16 @@ $(function() {
 	$('.js-popup2').on('click', function(e) {
 	  e.preventDefault();
 
-	  $('.popup2').slideDown();
-	  $('.popup-overlay').css('display', 'block');
+	  $('.popup2').slideDown(700);
+	  $('.popup-overlay').fadeIn();
 	  
 	  // поиск button close popup
 	  $('.js-close-popup, .popup-overlay').on('click', function(e) {
 	  	e.preventDefault();
-			$('.popup2').slideUp('300', function() {
+			$('.popup2').slideUp(700, function() {
 				
 			});
-			$('.popup-overlay').css('display', 'none');
+			$('.popup-overlay').fadeOut();
 	  });
 	});
 
@@ -230,16 +234,16 @@ $(function() {
 	$('.js-popup3').on('click', function(e) {
 	  e.preventDefault();
 
-	  $('.popup3').slideDown();
-	  $('.popup-overlay').css('display', 'block');
+	  $('.popup3').slideDown(700);
+	  $('.popup-overlay').fadeIn();
 	  
 	  // поиск button close popup
 	  $('.js-close-popup, .popup-overlay').on('click', function(e) {
 	  	e.preventDefault();
-			$('.popup3').slideUp('300', function() {
+			$('.popup3').slideUp(700, function() {
 				
 			});
-			$('.popup-overlay').css('display', 'none');
+			$('.popup-overlay').fadeOut();
 	  });
 	});
 
@@ -247,16 +251,16 @@ $(function() {
 	$('.js-popup4').on('click', function(e) {
 	  e.preventDefault();
 
-	  $('.popup4').slideDown();
-	  $('.popup-overlay').css('display', 'block');
+	  $('.popup4').slideDown(700);
+	  $('.popup-overlay').fadeIn();
 	  
 	  // поиск button close popup
 	  $('.js-close-popup, .popup-overlay').on('click', function(e) {
 	  	e.preventDefault();
-			$('.popup4').slideUp('300', function() {
+			$('.popup4').slideUp(700, function() {
 				
 			});
-			$('.popup-overlay').css('display', 'none');
+			$('.popup-overlay').fadeOut();
 	  });
 	});
 
@@ -264,16 +268,16 @@ $(function() {
 	$('.js-popup5').on('click', function(e) {
 	  e.preventDefault();
 
-	  $('.popup5').slideDown();
-	  $('.popup-overlay').css('display', 'block');
+	  $('.popup5').slideDown(700);
+	  $('.popup-overlay').fadeIn();
 	  
 	  // поиск button close popup
 	  $('.js-close-popup, .popup-overlay').on('click', function(e) {
 	  	e.preventDefault();
-			$('.popup5').slideUp('300', function() {
+			$('.popup5').slideUp(700, function() {
 				
 			});
-			$('.popup-overlay').css('display', 'none');
+			$('.popup-overlay').fadeOut();
 	  });
 	});
 
@@ -287,16 +291,16 @@ $(function() {
 		$('.popupall').find('.js-close-popup').trigger('click');
 
 		// open login
-	  $('.popup').slideDown();
-	  $('.popup-overlay').css('display', 'block');
+	  $('.popup').slideDown(700);
+	  $('.popup-overlay').fadeIn();
 	  
 	  // поиск button close popup
 	  $('.js-close-popup, .popup-overlay').on('click', function(e) {
 	  	e.preventDefault();
-			$('.popup').slideUp('300', function() {
+			$('.popup').slideUp(700, function() {
 				
 			});
-			$('.popup-overlay').css('display', 'none');
+			$('.popup-overlay').fadeOut();
 	  });
 	});
 
@@ -308,16 +312,16 @@ $(function() {
 		$('.popupall').find('.js-close-popup').trigger('click');
 
 		// open signup
-	  $('.popup2').slideDown();
-	  $('.popup-overlay').css('display', 'block');
+	  $('.popup2').slideDown(700);
+	  $('.popup-overlay').fadeIn();
 	  
 	  // поиск button close popup
 	  $('.js-close-popup, .popup-overlay').on('click', function(e) {
 	  	e.preventDefault();
-			$('.popup2').slideUp('300', function() {
+			$('.popup2').slideUp(700, function() {
 				
 			});
-			$('.popup-overlay').css('display', 'none');
+			$('.popup-overlay').fadeOut();
 	  });
 	});
 
@@ -329,16 +333,16 @@ $(function() {
 		$('.popupall').find('.js-close-popup').trigger('click');
 
 		// open forgot
-	  $('.popup3').slideDown();
-	  $('.popup-overlay').css('display', 'block');
+	  $('.popup3').slideDown(700);
+	  $('.popup-overlay').fadeIn();
 	  
 	  // поиск button close popup
 	  $('.js-close-popup, .popup-overlay').on('click', function(e) {
 	  	e.preventDefault();
-			$('.popup3').slideUp('300', function() {
+			$('.popup3').slideUp(700, function() {
 				
 			});
-			$('.popup-overlay').css('display', 'none');
+			$('.popup-overlay').fadeOut();
 	  });
 	});
 

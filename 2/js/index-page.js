@@ -110,8 +110,8 @@ $(function() {
 	  // $('.popup').css('display', 'block');
 	  // $('.popup-overlay').css('display', 'block');
 	  // or
-	  $('.popup').slideDown();
-	  $('.popup-overlay').css('display', 'block');
+	  $('.popup').slideDown(600);
+	  $('.popup-overlay').fadeIn('slow');
 	  
 	  // поиск button close popup
 	  $('.js-close-popup, .popup-overlay').on('click', function(e) {
@@ -119,14 +119,14 @@ $(function() {
 			// $('.popup').css('display', 'none');
 			// $('.popup-overlay').css('display', 'none');
 			// or
-			$('.popup').slideUp('300', function() {
+			$('.popup').slideUp(600, function() {
 				
 				// stop iframe video play after close popup
 				// var video = $(".popup iframe").attr("src");
 				// $(".popup iframe").attr("src", "");
 				// $(".popup iframe").attr("src", video);
 			});
-			$('.popup-overlay').css('display', 'none');
+			$('.popup-overlay').fadeOut('slow');
 			// $('.popup').find("input").val(""); // off in wp
 	  });
 	});
@@ -142,8 +142,8 @@ $(function() {
 	  // $('.popup').css('display', 'block');
 	  // $('.popup-overlay').css('display', 'block');
 	  // or
-	  $('.popup2').slideDown();
-	  $('.popup-overlay').css('display', 'block');
+	  $('.popup2').slideDown(600);
+	  $('.popup-overlay').fadeIn('slow');
 	  
 	  // поиск button close popup
 	  $('.js-close-popup, .popup-overlay').on('click', function(e) {
@@ -151,9 +151,21 @@ $(function() {
 			// $('.popup').css('display', 'none');
 			// $('.popup-overlay').css('display', 'none');
 			// or
-			$('.popup2').slideUp();
-			$('.popup-overlay').css('display', 'none');
+			$('.popup2').slideUp(600);
+			$('.popup-overlay').fadeOut('slow');
 	  });
+	});
+
+
+
+	// invest page - buttons
+	$('.right-mainpage-top-left-procent-left').on('click', function(e) {
+		$('.right-mainpage-top-left-procent-right').removeClass('active');
+		$('.right-mainpage-top-left-procent-left').addClass('active');
+	});
+	$('.right-mainpage-top-left-procent-right').on('click', function(e) {
+		$('.right-mainpage-top-left-procent-left').removeClass('active');
+		$('.right-mainpage-top-left-procent-right').addClass('active');
 	});
 
 
