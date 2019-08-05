@@ -4,6 +4,12 @@ $(function() {
 
 
 
+	$('.certificat2-about__left button').on('click', function(e) {
+		$('.certificat2-about__middle a').trigger('click');
+	});
+
+
+
 	// jQuery smooth scrolling
 	$('.go_to1').click( function() { // ловим клик по ссылке с классом go_to1
 		var scroll_el = $(this).attr('href'); // возьмем содержимое атрибута href, должен быть селектором, т.е. например начинаться с # или .
