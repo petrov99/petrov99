@@ -4,8 +4,18 @@ $(function() {
 
 
 
-	$('.certificat2-about__left button').on('click', function(e) {
-		$('.certificat2-about__middle a').trigger('click');
+	// $('.certificat2-about__left button').on('click', function(e) {
+	// 	$('.certificat2-about__middle a').trigger('click');
+	// });
+
+
+
+	$('.promo-right .video img').on('click', function(e) {
+		function foo() {
+			$(".promo-right .video iframe").attr("src","https://www.youtube.com/embed/wBD_rLjSnh0?&autoplay=1");
+		}
+		
+		setTimeout(foo, 1700);	  
 	});
 
 

@@ -4,6 +4,94 @@ $(function() {
 
 
 
+	// меняем слайды и меняем input radio
+	$('.slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
+		console.log(currentSlide);
+		if(currentSlide == 0) {
+			// 0 - 4
+			$('.right-mainpage-top-left-procent__inputs input').eq(0).prop('checked',true);
+
+			// $('.right-mainpage-top-left-procent__inputs input').attr('checked',false);
+			// $('.right-mainpage-top-left-procent__inputs input').eq(0).attr('checked',true);
+
+			$('.right-mainpage-top-right-top__w span').text('Bitcoin wallet');
+			var comms = $('.right-mainpage-top-left-procent__inputs input:nth-child(1)').attr('data-commission');
+			// console.log(comms);
+			$('.right-mainpage-top-right-top__c span').text(comms);
+
+
+
+			$('.right-mainpage-top-left-balance__buttons__inputs input').eq(0).prop('checked',true);
+			var comms2 = $('.right-mainpage-top-left-balance__buttons__inputs input:nth-child(1)').attr('data-commission');
+			// console.log(comms2);
+			$('.right-mainpage-top-right-top__c span').text(comms2);
+		}
+		if(currentSlide == 1) {
+			// 0 - 4
+			$('.right-mainpage-top-left-procent__inputs input').eq(1).prop('checked',true);
+
+			// $('.right-mainpage-top-left-procent__inputs input').attr('checked',false);
+			// $('.right-mainpage-top-left-procent__inputs input').eq(1).attr('checked',true);
+
+			$('.right-mainpage-top-right-top__w span').text('Ethereum wallet');
+			var comms = $('.right-mainpage-top-left-procent__inputs input:nth-child(2)').attr('data-commission');
+			// console.log(comms);
+			$('.right-mainpage-top-right-top__c span').text(comms);
+
+
+
+			$('.right-mainpage-top-left-balance__buttons__inputs input').eq(1).prop('checked',true);
+			var comms2 = $('.right-mainpage-top-left-balance__buttons__inputs input:nth-child(2)').attr('data-commission');
+			// console.log(comms2);
+			$('.right-mainpage-top-right-top__c span').text(comms2);
+		}
+		if(currentSlide == 2) {
+			// 0 - 4
+			$('.right-mainpage-top-left-procent__inputs input').eq(2).prop('checked',true);
+			$('.right-mainpage-top-right-top__w span').text('Litecoin wallet');
+			var comms = $('.right-mainpage-top-left-procent__inputs input:nth-child(3)').attr('data-commission');
+			// console.log(comms);
+			$('.right-mainpage-top-right-top__c span').text(comms);
+
+
+
+			$('.right-mainpage-top-left-balance__buttons__inputs input').eq(2).prop('checked',true);
+			var comms2 = $('.right-mainpage-top-left-balance__buttons__inputs input:nth-child(3)').attr('data-commission');
+			// console.log(comms2);
+			$('.right-mainpage-top-right-top__c span').text(comms2);
+		}
+		if(currentSlide == 3) {
+			// 0 - 4
+			$('.right-mainpage-top-left-procent__inputs input').eq(3).prop('checked',true);
+			$('.right-mainpage-top-right-top__w span').text('Payeer wallet');
+			var comms = $('.right-mainpage-top-left-procent__inputs input:nth-child(4)').attr('data-commission');
+			// console.log(comms);
+			$('.right-mainpage-top-right-top__c span').text(comms);
+
+
+
+			$('.right-mainpage-top-left-balance__buttons__inputs input').eq(3).prop('checked',true);
+			var comms2 = $('.right-mainpage-top-left-balance__buttons__inputs input:nth-child(4)').attr('data-commission');
+			// console.log(comms2);
+			$('.right-mainpage-top-right-top__c span').text(comms2);
+		}
+		if(currentSlide == 4) {
+			// 0 - 4
+			$('.right-mainpage-top-left-procent__inputs input').eq(4).prop('checked',true);
+			$('.right-mainpage-top-right-top__w span').text('Perfect money wallet');
+			var comms = $('.right-mainpage-top-left-procent__inputs input:nth-child(5)').attr('data-commission');
+			// console.log(comms);
+			$('.right-mainpage-top-right-top__c span').text(comms);
+
+
+
+			$('.right-mainpage-top-left-balance__buttons__inputs input').eq(4).prop('checked',true);
+			var comms2 = $('.right-mainpage-top-left-balance__buttons__inputs input:nth-child(5)').attr('data-commission');
+			// console.log(comms2);
+			$('.right-mainpage-top-right-top__c span').text(comms2);
+		}
+	});
+
 	// slick slider
 	$('.slider').slick({
 		slidesToShow: 1,
@@ -42,6 +130,22 @@ $(function() {
 			}
 	  ]
 	});
+
+
+
+
+
+	// Investing information:
+	$('.right-mainpage-top-left-balance__buttons input').on('keyup', function(e) {
+		var amount = $('.right-mainpage-top-left-balance__buttons input').val();
+		$('.right-mainpage-top-right-top__amount span').text(amount);
+	});
+
+	
+
+
+
+
 
 
 
