@@ -288,7 +288,7 @@ body .wrap {
 }
 
 .promo {
-  background: url(../img/promo-bg.png) 50% 80% no-repeat;
+  background: url(../img/promo-bg.png) 50% 58% no-repeat;
   background-size: 100%;
   min-height: 1113px;
   padding: 60px 0 75px;
@@ -2540,7 +2540,7 @@ body .wrap {
 
 @media only screen and (max-width: 1600px) {
   body .wrap {
-    max-width: 1260px;
+    max-width: 1220px;
   }
 }
 
@@ -2914,17 +2914,73 @@ body .wrap {
     margin-bottom: 10px;
   }
 
+  .page-withus-how-work__left h2 {
+    font-size: 44px;
+    margin-bottom: 20px;
+  }
+
   .page-withus-how-work__right {
     width: 100%;
   }
 
   .page-withus-description {
     background: #5c687a;
+    padding: 20px 0;
+  }
+
+  .page-withus-description .wrap {
+    text-align: center;
+  }
+
+  .page-withus-description .wrap h2 {
+    font-size: 50px;
+  }
+
+  .page-withus-description .wrap p {
+    font-size: 30px;
+    line-height: 40px;
   }
 
   .page-withus-conditions .wrap h2 {
-    font-size: 50px;
-    line-height: 55px;
+    font-size: 44px;
+    line-height: 50px;
+    margin-bottom: 20px;
+  }
+
+  .page-withus-profit .wrap {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .page-withus-profit__left {
+    width: 40%;
+    margin: auto;
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+
+  .page-withus-profit__right {
+    width: 100%;
+    margin-bottom: 10px;
+    -webkit-box-ordinal-group: 1;
+    -ms-flex-order: 0;
+    order: 0;
+  }
+
+  .page-withus-profit__right h2 {
+    font-size: 44px;
+    margin-bottom: 20px;
+  }
+
+  .page-withus-profit__right p {
+    font-size: 30px;
+    line-height: 50px;
+  }
+
+  .page-withus-bonus .wrap a {
+    font-size: 28px;
+    max-width: 500px;
   }
 
   .page-withus-bonus__list {
@@ -2934,7 +2990,7 @@ body .wrap {
   }
 
   .page-withus-bonus__left {
-    width: 50%;
+    width: 40%;
     margin: auto;
     -webkit-box-ordinal-group: 2;
     -ms-flex-order: 1;
@@ -2947,6 +3003,16 @@ body .wrap {
     -webkit-box-ordinal-group: 1;
     -ms-flex-order: 0;
     order: 0;
+  }
+
+  .page-withus-bonus__right h2 {
+    font-size: 44px;
+    margin-bottom: 20px;
+  }
+
+  .page-withus-bonus__right p {
+    font-size: 30px;
+    line-height: 50px;
   }
 
   .page-questions-texts__item button {
@@ -3081,6 +3147,14 @@ body .wrap {
     width: 100%;
   }
 
+  .promo__top-right img {
+    width: 50%;
+  }
+
+  .promo__middle .promo-slider > div canvas {
+    display: none !important;
+  }
+
   .promo-work__item {
     width: 100%;
     padding: 0 10px 0 85px;
@@ -3165,25 +3239,12 @@ body .wrap {
     background-size: cover;
   }
 
-  .page-withus-profit .wrap {
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-  }
-
   .page-withus-profit__left {
-    width: 50%;
-    margin: auto;
-    -webkit-box-ordinal-group: 2;
-    -ms-flex-order: 1;
-    order: 1;
+    display: none;
   }
 
-  .page-withus-profit__right {
-    width: 100%;
-    margin-bottom: 10px;
-    -webkit-box-ordinal-group: 1;
-    -ms-flex-order: 0;
-    order: 0;
+  .page-withus-bonus__left {
+    display: none;
   }
 
   .page-questions-texts__list {
