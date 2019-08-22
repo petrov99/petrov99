@@ -249,8 +249,8 @@ body .wrap {
 }
 
 .header__bottom-menu ul li a {
-  font-family: 'MuseoSansCyrl_700', sans-serif;
-  font-weight: 700;
+  font-family: 'MuseoSansCyrl_500', sans-serif;
+  font-weight: 500;
   font-size: 20px;
   color: #000;
 }
@@ -288,7 +288,7 @@ body .wrap {
 }
 
 .promo {
-  background: url(../img/promo-bg.png) 50% bottom no-repeat;
+  background: url(../img/promo-bg.png) 50% 80% no-repeat;
   background-size: 100%;
   min-height: 1113px;
   padding: 60px 0 75px;
@@ -1021,8 +1021,8 @@ body .wrap {
   padding: 95px 0 55px;
   font-family: 'MuseoSansCyrl_900', sans-serif;
   font-weight: 900;
-  font-size: 57px;
-  line-height: 76px;
+  font-size: 50px;
+  line-height: 70px;
   text-align: center;
   color: #000;
 }
@@ -1406,7 +1406,7 @@ body .wrap {
 .page-questions-title .wrap h1 {
   font-family: 'MuseoSansCyrl_900', sans-serif;
   font-weight: 900;
-  font-size: 41px;
+  font-size: 36px;
   color: #000;
   text-align: center;
 }
@@ -1437,7 +1437,7 @@ body .wrap {
 }
 
 .page-questions-texts__item button {
-  padding: 28px 45px;
+  padding: 20px 40px;
   border-radius: 10px;
   background: #fff;
   width: 100%;
@@ -1446,7 +1446,7 @@ body .wrap {
   border: none;
   font-family: 'MuseoSansCyrl_300', sans-serif;
   font-weight: 300;
-  font-size: 21px;
+  font-size: 18px;
   text-align: left;
   color: #000;
 }
@@ -1475,7 +1475,7 @@ body .wrap {
 .page-questions-texts__result h2 {
   font-family: 'MuseoSansCyrl_900', sans-serif;
   font-weight: 900;
-  font-size: 31px;
+  font-size: 28px;
   color: #000;
   margin-bottom: 40px;
 }
@@ -1494,10 +1494,10 @@ body .wrap {
 .page-questions-texts__result-description p {
   font-family: 'MuseoSansCyrl_300', sans-serif;
   font-weight: 300;
-  font-size: 29px;
-  line-height: 36px;
+  font-size: 22px;
+  line-height: 28px;
   color: #000;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .page-questions-texts__result-description p:last-child {
