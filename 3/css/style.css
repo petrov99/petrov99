@@ -225,7 +225,7 @@ body .wrap {
 }
 
 .header__bottom-logo a img {
-  width: 255px;
+  width: 210px;
 }
 
 .header__bottom-menu ul {
@@ -2540,7 +2540,7 @@ body .wrap {
 
 @media only screen and (max-width: 1600px) {
   body .wrap {
-    max-width: 1220px;
+    max-width: 1170px;
   }
 }
 
