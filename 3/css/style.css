@@ -261,7 +261,7 @@ body .wrap {
 
 .header__bottom-login-reg button,
 .header__bottom-login-reg a {
-  font-size: 18px;
+  font-size: 16px;
   color: #000;
   border-radius: 5px;
   display: inline-block;
@@ -689,6 +689,7 @@ body .wrap {
   padding: 15px 0;
   border-radius: 5px;
   border: 2px solid #c9c9c9;
+  color: #000;
 }
 
 .card-mobile {
@@ -984,7 +985,7 @@ body .wrap {
 .news__item h3 {
   font-family: 'MuseoSansCyrl_700', sans-serif;
   font-weight: 700;
-  font-size: 28px;
+  font-size: 26px;
   color: #000;
   margin-bottom: 20px;
 }
@@ -992,10 +993,10 @@ body .wrap {
 .news__item p {
   font-family: 'MuseoSansCyrl_300', sans-serif;
   font-weight: 300;
-  font-size: 19px;
-  line-height: 34px;
+  font-size: 18px;
+  line-height: 30px;
   color: #000;
-  margin-bottom: 55px;
+  margin-bottom: 45px;
 }
 
 .news__item a {
@@ -1003,7 +1004,7 @@ body .wrap {
   vertical-align: middle;
   font-family: 'MuseoSansCyrl_500', sans-serif;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   color: #000;
   text-align: center;
   padding: 15px 40px;
@@ -1023,8 +1024,8 @@ body .wrap {
   padding: 95px 0 55px;
   font-family: 'MuseoSansCyrl_900', sans-serif;
   font-weight: 900;
-  font-size: 40px;
-  line-height: 60px;
+  font-size: 36px;
+  line-height: 50px;
   text-align: center;
   color: #000;
 }
@@ -1040,8 +1041,8 @@ body .wrap {
 .page-withus-promo .wrap p {
   font-family: 'MuseoSansCyrl_300', sans-serif;
   font-weight: 300;
-  font-size: 24px;
-  line-height: 36px;
+  font-size: 22px;
+  line-height: 32px;
   text-align: center;
   color: #000;
   margin-bottom: 70px;
@@ -1057,13 +1058,13 @@ body .wrap {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-bottom: 110px;
+  margin-bottom: 50px;
 }
 
 .page-withus-promo__list a {
   font-family: 'MuseoSansCyrl_500', sans-serif;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 22px;
   color: #000;
   text-align: center;
   padding: 18px 60px 18px 100px;
@@ -1107,15 +1108,15 @@ body .wrap {
 .page-withus-how-work__left h2 {
   font-family: 'MuseoSansCyrl_900', sans-serif;
   font-weight: 900;
-  font-size: 48px;
+  font-size: 46px;
   color: #000;
-  margin-bottom: 65px;
+  margin-bottom: 60px;
 }
 
 .page-withus-how-work__left ul li {
   font-family: 'MuseoSansCyrl_300', sans-serif;
   font-weight: 300;
-  font-size: 26px;
+  font-size: 22px;
   line-height: 40px;
   color: #000;
   position: relative;
@@ -1130,7 +1131,7 @@ body .wrap {
   left: 0;
   font-family: 'MuseoSansCyrl_900', sans-serif;
   font-weight: 900;
-  font-size: 31px;
+  font-size: 26px;
   color: #000;
 }
 
@@ -1178,7 +1179,7 @@ body .wrap {
 }
 
 .page-withus-description {
-  padding: 40px 0;
+  padding: 30px 0;
   background: #5c687a url(../img/pagewithus-description-bg1.png) right 50% no-repeat;
   background-size: contain;
 }
@@ -1186,7 +1187,7 @@ body .wrap {
 .page-withus-description .wrap h2 {
   font-family: 'MuseoSansCyrl_900', sans-serif;
   font-weight: 900;
-  font-size: 48px;
+  font-size: 42px;
   color: #fff;
   margin-bottom: 20px;
 }
@@ -1194,8 +1195,8 @@ body .wrap {
 .page-withus-description .wrap p {
   font-family: 'MuseoSansCyrl_300', sans-serif;
   font-weight: 300;
-  font-size: 26px;
-  line-height: 40px;
+  font-size: 22px;
+  line-height: 36px;
   color: #fff;
 }
 
@@ -1212,8 +1213,8 @@ body .wrap {
 .page-withus-conditions .wrap h2 {
   font-family: 'MuseoSansCyrl_900', sans-serif;
   font-weight: 900;
-  font-size: 40px;
-  line-height: 60px;
+  font-size: 36px;
+  line-height: 50px;
   color: #000;
   text-align: center;
   margin-bottom: 40px;
@@ -1257,7 +1258,7 @@ body .wrap {
 .page-withus-conditions__item h3 {
   font-family: 'MuseoSansCyrl_300', sans-serif;
   font-weight: 300;
-  font-size: 26px;
+  font-size: 24px;
   color: #000;
 }
 
@@ -1281,7 +1282,8 @@ body .wrap {
 .page-withus-conditions2 .wrap h2 {
   font-family: 'MuseoSansCyrl_300', sans-serif;
   font-weight: 300;
-  font-size: 26px;
+  font-size: 24px;
+  line-height: 34px;
   color: #000;
   margin-left: 430px;
 }
@@ -1309,7 +1311,7 @@ body .wrap {
 }
 
 .page-withus-profit__left {
-  width: 24%;
+  width: 22%;
   font-size: 0;
 }
 
@@ -1318,13 +1320,13 @@ body .wrap {
 }
 
 .page-withus-profit__right {
-  width: 60%;
+  width: 64%;
 }
 
 .page-withus-profit__right h2 {
   font-family: 'MuseoSansCyrl_900', sans-serif;
   font-weight: 900;
-  font-size: 40px;
+  font-size: 36px;
   color: #000;
   margin-bottom: 30px;
 }
@@ -1332,8 +1334,8 @@ body .wrap {
 .page-withus-profit__right p {
   font-family: 'MuseoSansCyrl_300', sans-serif;
   font-weight: 300;
-  font-size: 26px;
-  line-height: 40px;
+  font-size: 24px;
+  line-height: 34px;
   color: #000;
   margin-bottom: 50px;
 }
@@ -1349,7 +1351,7 @@ body .wrap {
 
 .page-withus-bonus .wrap a {
   display: block;
-  max-width: 540px;
+  max-width: 480px;
   margin: auto;
   text-align: center;
   border-radius: 5px;
@@ -1375,7 +1377,7 @@ body .wrap {
 }
 
 .page-withus-bonus__left {
-  width: 24%;
+  width: 22%;
   font-size: 0;
 }
 
@@ -1384,13 +1386,13 @@ body .wrap {
 }
 
 .page-withus-bonus__right {
-  width: 60%;
+  width: 64%;
 }
 
 .page-withus-bonus__right h2 {
   font-family: 'MuseoSansCyrl_900', sans-serif;
   font-weight: 900;
-  font-size: 40px;
+  font-size: 36px;
   color: #000;
   margin-bottom: 30px;
 }
@@ -1398,8 +1400,8 @@ body .wrap {
 .page-withus-bonus__right p {
   font-family: 'MuseoSansCyrl_300', sans-serif;
   font-weight: 300;
-  font-size: 26px;
-  line-height: 40px;
+  font-size: 24px;
+  line-height: 34px;
   color: #000;
 }
 
@@ -1814,24 +1816,24 @@ body .wrap {
 .page-about-description__left h1 {
   font-family: 'MuseoSansCyrl_700', sans-serif;
   font-weight: 700;
-  font-size: 42px;
+  font-size: 36px;
   color: #000;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .page-about-description__left p {
   font-family: 'MuseoSansCyrl_300', sans-serif;
   font-weight: 300;
-  font-size: 26px;
-  line-height: 41px;
+  font-size: 24px;
+  line-height: 38px;
   color: #000;
-  margin-bottom: 70px;
+  margin-bottom: 50px;
 }
 
 .page-about-description__left h2 {
   font-family: 'MuseoSansCyrl_700', sans-serif;
   font-weight: 700;
-  font-size: 39px;
+  font-size: 36px;
   color: #000;
   margin-bottom: 15px;
 }
@@ -1877,25 +1879,25 @@ body .wrap {
 
 .page-about-features__item {
   width: 24.4%;
-  padding: 45px 35px 0;
+  padding: 35px 8px 0;
   border-radius: 5px;
   background: #fff;
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-  min-height: 465px;
+  min-height: 405px;
   text-align: center;
 }
 
 .page-about-features__item img {
-  height: 150px;
+  height: 140px;
   margin-bottom: 40px;
 }
 
 .page-about-features__item p {
   font-family: 'MuseoSansCyrl_300', sans-serif;
   font-weight: 300;
-  font-size: 21px;
-  line-height: 28px;
+  font-size: 16px;
+  line-height: 24px;
   color: #000;
 }
 
@@ -1934,8 +1936,8 @@ body .wrap {
 .page-about-description2__right p {
   font-family: 'MuseoSansCyrl_300', sans-serif;
   font-weight: 300;
-  font-size: 30px;
-  line-height: 46px;
+  font-size: 22px;
+  line-height: 38px;
   color: #000;
 }
 
@@ -1989,7 +1991,7 @@ body .wrap {
 .page-about-certificate__middle h2 {
   font-family: 'MuseoSansCyrl_700', sans-serif;
   font-weight: 700;
-  font-size: 33px;
+  font-size: 30px;
   color: #000;
   margin-bottom: 14px;
 }
@@ -2069,7 +2071,7 @@ body .wrap {
   font-family: 'MuseoSansCyrl_900', sans-serif;
   font-weight: 900;
   text-align: center;
-  font-size: 136px;
+  font-size: 126px;
   color: #f7f7f7;
   padding-top: 200px;
   position: relative;
@@ -2104,19 +2106,19 @@ body .wrap {
 .page-about-our-production__item {
   text-align: center;
   width: 49%;
-  margin-top: 120px;
+  margin-top: 40px;
 }
 
 .page-about-our-production__item img {
-  height: 280px;
-  margin-bottom: 30px;
+  height: 220px;
+  margin-bottom: 10px;
 }
 
 .page-about-our-production__item h3 {
   font-family: 'MuseoSansCyrl_300', sans-serif;
   font-weight: 300;
-  font-size: 30px;
-  line-height: 55px;
+  font-size: 26px;
+  line-height: 36px;
   color: #000;
 }
 
@@ -2133,12 +2135,12 @@ body .wrap {
 .page-about-features2 .wrap h2 {
   font-family: 'MuseoSansCyrl_900', sans-serif;
   font-weight: 900;
-  font-size: 55px;
-  line-height: 78px;
+  font-size: 36px;
+  line-height: 50px;
   color: #000;
   text-align: center;
   padding-top: 100px;
-  padding-bottom: 140px;
+  padding-bottom: 50px;
 }
 
 .page-about-features2__list {
@@ -2154,8 +2156,8 @@ body .wrap {
 
 .page-about-features2__item {
   width: 44%;
-  padding-left: 110px;
-  margin-bottom: 75px;
+  padding-left: 95px;
+  margin-bottom: 45px;
 }
 
 .page-about-features2__item:nth-child(1) {
@@ -2191,7 +2193,7 @@ body .wrap {
 .page-about-features2__item h3 {
   font-family: 'MuseoSansCyrl_900', sans-serif;
   font-weight: 900;
-  font-size: 26px;
+  font-size: 22px;
   color: #000;
   margin-bottom: 20px;
 }
@@ -2199,14 +2201,14 @@ body .wrap {
 .page-about-features2__item p {
   font-family: 'MuseoSansCyrl_300', sans-serif;
   font-weight: 300;
-  font-size: 26px;
-  line-height: 37px;
+  font-size: 22px;
+  line-height: 30px;
   color: #000;
 }
 
 .footer {
   background: #5c687a;
-  padding: 60px 0;
+  padding: 40px 0;
 }
 
 .footer .wrap {
@@ -2802,12 +2804,6 @@ body .wrap {
     font-size: 100px;
     padding: 50px 0;
   }
-
-  .page-about-features2 .wrap h2 {
-    font-size: 50px;
-    line-height: 55px;
-    margin-bottom: 50px;
-  }
 }
 
 @media only screen and (max-width: 991px) {
@@ -2820,6 +2816,8 @@ body .wrap {
     width: 100%;
     margin-bottom: 10px;
     text-align: center;
+    position: static !important;
+    left: 0 !important;
   }
 
   .header__top-inner-right {
@@ -2829,7 +2827,7 @@ body .wrap {
 
   .header__bottom-menu {
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
 
   .header__bottom-menu ul li {
@@ -2887,11 +2885,6 @@ body .wrap {
     justify-content: center;
   }
 
-  .page-withus-promo .wrap h1 {
-    font-size: 50px;
-    line-height: 55px;
-  }
-
   .page-withus-promo__list a {
     padding: 18px 18px 18px 80px;
   }
@@ -2907,7 +2900,6 @@ body .wrap {
   }
 
   .page-withus-how-work__left h2 {
-    font-size: 44px;
     margin-bottom: 20px;
   }
 
@@ -2924,18 +2916,7 @@ body .wrap {
     text-align: center;
   }
 
-  .page-withus-description .wrap h2 {
-    font-size: 50px;
-  }
-
-  .page-withus-description .wrap p {
-    font-size: 30px;
-    line-height: 40px;
-  }
-
   .page-withus-conditions .wrap h2 {
-    font-size: 44px;
-    line-height: 50px;
     margin-bottom: 20px;
   }
 
@@ -2961,17 +2942,16 @@ body .wrap {
   }
 
   .page-withus-profit__right h2 {
-    font-size: 44px;
+    font-size: 40px;
     margin-bottom: 20px;
   }
 
   .page-withus-profit__right p {
-    font-size: 30px;
-    line-height: 50px;
+    font-size: 26px;
+    line-height: 44px;
   }
 
   .page-withus-bonus .wrap a {
-    font-size: 28px;
     max-width: 500px;
   }
 
@@ -2998,12 +2978,10 @@ body .wrap {
   }
 
   .page-withus-bonus__right h2 {
-    font-size: 44px;
     margin-bottom: 20px;
   }
 
   .page-withus-bonus__right p {
-    font-size: 30px;
     line-height: 50px;
   }
 
@@ -3209,10 +3187,6 @@ body .wrap {
     margin-bottom: 0;
   }
 
-  .page-withus-promo .wrap h1 {
-    font-size: 40px;
-  }
-
   .page-withus-promo__list {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -3364,7 +3338,7 @@ body .wrap {
 
   .header__bottom-menu ul li {
     width: 100%;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
   }
 
   .promo-certificate__middle-list {
