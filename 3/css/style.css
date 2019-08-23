@@ -225,7 +225,7 @@ body .wrap {
 }
 
 .header__bottom-logo a img {
-  width: 210px;
+  width: 190px;
 }
 
 .header__bottom-menu ul {
@@ -241,7 +241,7 @@ body .wrap {
 }
 
 .header__bottom-menu ul li {
-  margin-right: 28px;
+  margin-right: 30px;
 }
 
 .header__bottom-menu ul li:last-child {
@@ -251,7 +251,7 @@ body .wrap {
 .header__bottom-menu ul li a {
   font-family: 'MuseoSansCyrl_500', sans-serif;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 18px;
   color: #000;
 }
 
@@ -261,7 +261,7 @@ body .wrap {
 
 .header__bottom-login-reg button,
 .header__bottom-login-reg a {
-  font-size: 20px;
+  font-size: 18px;
   color: #000;
   border-radius: 5px;
   display: inline-block;
@@ -288,7 +288,7 @@ body .wrap {
 }
 
 .promo {
-  background: url(../img/promo-bg.png) 50% 58% no-repeat;
+  background: url(../img/promo-bg.png) 50% 42% no-repeat;
   background-size: 100%;
   min-height: 1113px;
   padding: 60px 0 75px;
@@ -313,8 +313,8 @@ body .wrap {
 .promo__top-left h1 {
   font-family: 'MuseoSansCyrl_900', sans-serif;
   font-weight: 900;
-  font-size: 128px;
-  line-height: 140px;
+  font-size: 108px;
+  line-height: 130px;
   color: #f4f4f4;
   margin-bottom: 20px;
   position: relative;
@@ -327,7 +327,7 @@ body .wrap {
   left: 0;
   font-family: 'MuseoSansCyrl_900', sans-serif;
   font-weight: 900;
-  font-size: 65px;
+  font-size: 58px;
   color: #000;
   opacity: 1;
 }
@@ -350,11 +350,11 @@ body .wrap {
 .promo__top-left ul li {
   font-family: 'MuseoSansCyrl_300', sans-serif;
   font-weight: 300;
-  font-size: 35px;
+  font-size: 31px;
   color: #000;
   padding-left: 60px;
   margin-right: 40px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .promo__top-left ul li:nth-child(1) {
@@ -415,7 +415,7 @@ body .wrap {
 .promo__middle .promo-slider > div .promo-slider-popup span {
   font-family: 'MuseoSansCyrl_500', sans-serif;
   font-weight: 500;
-  font-size: 22px;
+  font-size: 20px;
   color: #000;
   margin-right: 15px;
   cursor: default;
@@ -426,7 +426,7 @@ body .wrap {
   margin-right: 20px;
   font-family: 'MuseoSansCyrl_300', sans-serif;
   font-weight: 300;
-  font-size: 22px;
+  font-size: 20px;
   background: transparent;
   color: #000;
   padding: 2px 8px;
@@ -520,7 +520,7 @@ body .wrap {
 .promo-work h2 {
   font-family: 'MuseoSansCyrl_700', sans-serif;
   font-weight: 700;
-  font-size: 42px;
+  font-size: 38px;
   text-align: center;
   color: #000;
   margin-bottom: 73px;
@@ -542,9 +542,9 @@ body .wrap {
 .promo-work__item {
   font-family: 'MuseoSansCyrl_700', sans-serif;
   font-weight: 700;
-  font-size: 21px;
+  font-size: 18px;
   color: #000;
-  padding: 0 30px 0 125px;
+  padding: 0 30px 0 95px;
   border-radius: 10px;
   background: #fff;
   width: 32%;
@@ -563,17 +563,17 @@ body .wrap {
 }
 
 .promo-work__item:nth-child(1) {
-  background: #fff url(../img/wallet_2.svg) 35px 50% no-repeat;
+  background: #fff url(../img/wallet_2.svg) 25px 50% no-repeat;
   background-size: 60px 60px;
 }
 
 .promo-work__item:nth-child(2) {
-  background: #fff url(../img/piggy-bank.svg) 35px 50% no-repeat;
+  background: #fff url(../img/piggy-bank.svg) 25px 50% no-repeat;
   background-size: 60px 60px;
 }
 
 .promo-work__item:nth-child(3) {
-  background: #fff url(../img/mastercard.svg) 35px 50% no-repeat;
+  background: #fff url(../img/mastercard.svg) 25px 50% no-repeat;
   background-size: 60px 60px;
 }
 
@@ -613,13 +613,13 @@ body .wrap {
 }
 
 .promo-certificate__middle {
-  margin-right: 150px;
+  margin-right: 110px;
 }
 
 .promo-certificate__middle h2 {
   font-family: 'MuseoSansCyrl_700', sans-serif;
   font-weight: 700;
-  font-size: 37px;
+  font-size: 32px;
   color: #000;
   margin-bottom: 14px;
 }
@@ -627,7 +627,7 @@ body .wrap {
 .promo-certificate__middle h3 {
   font-family: 'MuseoSansCyrl_300', sans-serif;
   font-weight: 300;
-  font-size: 25px;
+  font-size: 22px;
   color: #000;
   margin-bottom: 30px;
 }
@@ -647,7 +647,7 @@ body .wrap {
 .promo-certificate__middle-list span {
   font-family: 'MuseoSansCyrl_500', sans-serif;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 12px;
   color: #000;
   margin-right: 20px;
 }
@@ -655,14 +655,14 @@ body .wrap {
 .promo-certificate__middle-list a {
   font-family: 'MuseoSansCyrl_500', sans-serif;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 12px;
   color: #000;
   background: #f8f8f8 url(../img/blank-file.svg) 20px 50% no-repeat;
   background-size: 15px;
   border-radius: 17px;
   padding: 5px 20px;
   padding-left: 50px;
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 .promo-certificate__middle-list a:last-child {
@@ -712,15 +712,16 @@ body .wrap {
 .card-mobile__card {
   width: 47%;
   background: #fed851 url(../img/card-icon.png) 50% bottom no-repeat;
+  background-size: 80%;
   border-radius: 10px;
-  padding: 60px 80px 0;
-  min-height: 790px;
+  padding: 40px 50px 0;
+  min-height: 700px;
 }
 
 .card-mobile__card h2 {
   font-family: 'MuseoSansCyrl_700', sans-serif;
   font-weight: 700;
-  font-size: 42px;
+  font-size: 32px;
   color: #000;
   margin-bottom: 35px;
 }
@@ -728,23 +729,24 @@ body .wrap {
 .card-mobile__card p {
   font-family: 'MuseoSansCyrl_300', sans-serif;
   font-weight: 300;
-  font-size: 26px;
-  line-height: 39px;
+  font-size: 18px;
+  line-height: 35px;
   color: #000;
 }
 
 .card-mobile__mobile {
   width: 47%;
   background: #5c687a url(../img/mobile-icon.png) 50% bottom no-repeat;
+  background-size: 55%;
   border-radius: 10px;
-  padding: 60px 80px 0;
-  min-height: 790px;
+  padding: 40px 50px 0;
+  min-height: 700px;
 }
 
 .card-mobile__mobile h2 {
   font-family: 'MuseoSansCyrl_700', sans-serif;
   font-weight: 700;
-  font-size: 42px;
+  font-size: 32px;
   color: #fff;
   margin-bottom: 35px;
 }
@@ -752,8 +754,8 @@ body .wrap {
 .card-mobile__mobile p {
   font-family: 'MuseoSansCyrl_300', sans-serif;
   font-weight: 300;
-  font-size: 26px;
-  line-height: 39px;
+  font-size: 18px;
+  line-height: 35px;
   color: #fff;
 }
 
@@ -764,7 +766,7 @@ body .wrap {
 .our-team .wrap h2 {
   font-family: 'MuseoSansCyrl_700', sans-serif;
   font-weight: 700;
-  font-size: 42px;
+  font-size: 38px;
   color: #000;
   text-align: center;
   padding-top: 195px;
@@ -814,7 +816,7 @@ body .wrap {
 .our-team__item-text h3 {
   font-family: 'MuseoSansCyrl_500', sans-serif;
   font-weight: 500;
-  font-size: 28px;
+  font-size: 26px;
   color: #000;
   margin-bottom: 10px;
 }
@@ -822,7 +824,7 @@ body .wrap {
 .our-team__item-text p {
   font-family: 'MuseoSansCyrl_300', sans-serif;
   font-weight: 300;
-  font-size: 19px;
+  font-size: 17px;
   color: #6a6a6a;
 }
 
@@ -918,7 +920,7 @@ body .wrap {
 .slider-wiki__right h2 {
   font-family: 'MuseoSansCyrl_700', sans-serif;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 28px;
   color: #000;
   margin-bottom: 10px;
 }
@@ -926,7 +928,7 @@ body .wrap {
 .slider-wiki__right p {
   font-family: 'MuseoSansCyrl_300', sans-serif;
   font-weight: 300;
-  font-size: 24px;
+  font-size: 22px;
   color: #000;
   margin-bottom: 20px;
 }
@@ -937,7 +939,7 @@ body .wrap {
   margin: auto;
   font-family: 'MuseoSansCyrl_500', sans-serif;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 18px;
   color: #000;
   padding: 17px 0;
   border-radius: 4px;
@@ -953,7 +955,7 @@ body .wrap {
   font-family: 'MuseoSansCyrl_700', sans-serif;
   font-weight: 700;
   text-align: center;
-  font-size: 42px;
+  font-size: 38px;
   color: #000;
   margin-bottom: 80px;
 }
@@ -974,7 +976,7 @@ body .wrap {
   width: 49%;
   background: #fff;
   border-radius: 5px;
-  padding: 50px 40px;
+  padding: 40px 30px;
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
@@ -982,7 +984,7 @@ body .wrap {
 .news__item h3 {
   font-family: 'MuseoSansCyrl_700', sans-serif;
   font-weight: 700;
-  font-size: 31px;
+  font-size: 28px;
   color: #000;
   margin-bottom: 20px;
 }
@@ -990,7 +992,7 @@ body .wrap {
 .news__item p {
   font-family: 'MuseoSansCyrl_300', sans-serif;
   font-weight: 300;
-  font-size: 21px;
+  font-size: 19px;
   line-height: 34px;
   color: #000;
   margin-bottom: 55px;
@@ -1001,7 +1003,7 @@ body .wrap {
   vertical-align: middle;
   font-family: 'MuseoSansCyrl_500', sans-serif;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 18px;
   color: #000;
   text-align: center;
   padding: 15px 40px;
@@ -1021,8 +1023,8 @@ body .wrap {
   padding: 95px 0 55px;
   font-family: 'MuseoSansCyrl_900', sans-serif;
   font-weight: 900;
-  font-size: 50px;
-  line-height: 70px;
+  font-size: 48px;
+  line-height: 68px;
   text-align: center;
   color: #000;
 }
@@ -1171,7 +1173,7 @@ body .wrap {
   background: #fed851;
   font-family: 'MuseoSansCyrl_500', sans-serif;
   font-weight: 500;
-  font-size: 29px;
+  font-size: 22px;
   color: #000;
 }
 
@@ -1184,7 +1186,7 @@ body .wrap {
 .page-withus-description .wrap h2 {
   font-family: 'MuseoSansCyrl_900', sans-serif;
   font-weight: 900;
-  font-size: 70px;
+  font-size: 60px;
   color: #fff;
   margin-bottom: 20px;
 }
@@ -1192,8 +1194,8 @@ body .wrap {
 .page-withus-description .wrap p {
   font-family: 'MuseoSansCyrl_300', sans-serif;
   font-weight: 300;
-  font-size: 35px;
-  line-height: 47px;
+  font-size: 32px;
+  line-height: 45px;
   color: #fff;
 }
 
@@ -1210,7 +1212,8 @@ body .wrap {
 .page-withus-conditions .wrap h2 {
   font-family: 'MuseoSansCyrl_900', sans-serif;
   font-weight: 900;
-  font-size: 57px;
+  font-size: 48px;
+  line-height: 68px;
   color: #000;
   text-align: center;
   margin-bottom: 110px;
@@ -1230,13 +1233,13 @@ body .wrap {
 
 .page-withus-conditions__item {
   text-align: center;
-  width: 32.5%;
+  width: 32%;
   border-radius: 5px;
   background: #fff;
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-  padding: 70px 0;
-  min-height: 470px;
+  padding: 40px 0;
+  min-height: 340px;
 }
 
 .page-withus-conditions__item:nth-child(2) {
@@ -1247,14 +1250,14 @@ body .wrap {
 }
 
 .page-withus-conditions__item img {
-  width: 180px;
-  margin-bottom: 70px;
+  width: 140px;
+  margin-bottom: 50px;
 }
 
 .page-withus-conditions__item h3 {
   font-family: 'MuseoSansCyrl_300', sans-serif;
   font-weight: 300;
-  font-size: 32px;
+  font-size: 26px;
   color: #000;
 }
 
@@ -1264,7 +1267,8 @@ body .wrap {
 }
 
 .page-withus-conditions2 {
-  margin-bottom: 120px;
+  background: #fcfcfc;
+  padding-bottom: 100px;
 }
 
 .page-withus-conditions2 .wrap {
@@ -1277,7 +1281,7 @@ body .wrap {
 .page-withus-conditions2 .wrap h2 {
   font-family: 'MuseoSansCyrl_300', sans-serif;
   font-weight: 300;
-  font-size: 37px;
+  font-size: 32px;
   color: #000;
   margin-left: 430px;
 }
@@ -1288,7 +1292,8 @@ body .wrap {
 }
 
 .page-withus-profit {
-  margin-bottom: 130px;
+  background: #fcfcfc;
+  padding-bottom: 100px;
 }
 
 .page-withus-profit .wrap {
@@ -1319,18 +1324,18 @@ body .wrap {
 .page-withus-profit__right h2 {
   font-family: 'MuseoSansCyrl_900', sans-serif;
   font-weight: 900;
-  font-size: 57px;
+  font-size: 48px;
   color: #000;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 
 .page-withus-profit__right p {
   font-family: 'MuseoSansCyrl_300', sans-serif;
   font-weight: 300;
-  font-size: 35px;
-  line-height: 53px;
+  font-size: 30px;
+  line-height: 44px;
   color: #000;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
 .page-withus-profit__right p:last-child {
@@ -1339,7 +1344,7 @@ body .wrap {
 
 .page-withus-bonus {
   background: #fcfcfc;
-  margin-bottom: 160px;
+  padding-bottom: 160px;
 }
 
 .page-withus-bonus .wrap a {
@@ -1348,11 +1353,11 @@ body .wrap {
   margin: auto;
   text-align: center;
   border-radius: 5px;
-  padding: 24px 0;
+  padding: 20px 0;
   background: #fed851;
   font-family: 'MuseoSansCyrl_500', sans-serif;
   font-weight: 500;
-  font-size: 35px;
+  font-size: 30px;
   color: #000;
 }
 
@@ -1385,22 +1390,22 @@ body .wrap {
 .page-withus-bonus__right h2 {
   font-family: 'MuseoSansCyrl_900', sans-serif;
   font-weight: 900;
-  font-size: 57px;
+  font-size: 48px;
   color: #000;
-  margin-bottom: 70px;
+  margin-bottom: 60px;
 }
 
 .page-withus-bonus__right p {
   font-family: 'MuseoSansCyrl_300', sans-serif;
   font-weight: 300;
-  font-size: 35px;
-  line-height: 53px;
+  font-size: 30px;
+  line-height: 44px;
   color: #000;
 }
 
 .page-questions-title {
   background: #fcfcfc;
-  padding: 80px 0 98px;
+  padding: 80px 0 80px;
 }
 
 .page-questions-title .wrap h1 {
@@ -1519,16 +1524,17 @@ body .wrap {
   font-size: 36px;
   line-height: 52px;
   color: #000;
+  padding-top: 20px;
   margin-bottom: 55px;
 }
 
 .page-questions-text .wrap button {
   font-family: 'MuseoSansCyrl_500', sans-serif;
   font-weight: 500;
-  font-size: 29px;
+  font-size: 27px;
   color: #000;
   background: transparent;
-  padding: 22px 0;
+  padding: 20px 0;
   width: 330px;
   border: 2px solid #fed851;
   border-radius: 5px;
@@ -1928,8 +1934,8 @@ body .wrap {
 .page-about-description2__right p {
   font-family: 'MuseoSansCyrl_300', sans-serif;
   font-weight: 300;
-  font-size: 34px;
-  line-height: 54px;
+  font-size: 30px;
+  line-height: 46px;
   color: #000;
 }
 
@@ -1983,7 +1989,7 @@ body .wrap {
 .page-about-certificate__middle h2 {
   font-family: 'MuseoSansCyrl_700', sans-serif;
   font-weight: 700;
-  font-size: 37px;
+  font-size: 33px;
   color: #000;
   margin-bottom: 14px;
 }
@@ -1991,7 +1997,7 @@ body .wrap {
 .page-about-certificate__middle h3 {
   font-family: 'MuseoSansCyrl_300', sans-serif;
   font-weight: 300;
-  font-size: 25px;
+  font-size: 20px;
   color: #000;
   margin-bottom: 30px;
 }
@@ -2011,7 +2017,7 @@ body .wrap {
 .page-about-certificate__middle-list span {
   font-family: 'MuseoSansCyrl_500', sans-serif;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 12px;
   color: #000;
   margin-right: 20px;
 }
@@ -2019,7 +2025,7 @@ body .wrap {
 .page-about-certificate__middle-list a {
   font-family: 'MuseoSansCyrl_500', sans-serif;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 12px;
   color: #000;
   background: #f8f8f8 url(../img/blank-file.svg) 20px 50% no-repeat;
   background-size: 15px;
@@ -2051,7 +2057,7 @@ body .wrap {
   text-align: center;
   font-family: 'MuseoSansCyrl_500', sans-serif;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 16px;
   color: #000;
 }
 
@@ -2063,7 +2069,7 @@ body .wrap {
   font-family: 'MuseoSansCyrl_900', sans-serif;
   font-weight: 900;
   text-align: center;
-  font-size: 146px;
+  font-size: 136px;
   color: #f7f7f7;
   padding-top: 200px;
   position: relative;
@@ -2127,8 +2133,8 @@ body .wrap {
 .page-about-features2 .wrap h2 {
   font-family: 'MuseoSansCyrl_900', sans-serif;
   font-weight: 900;
-  font-size: 57px;
-  line-height: 81px;
+  font-size: 55px;
+  line-height: 78px;
   color: #000;
   text-align: center;
   padding-top: 100px;
@@ -2239,21 +2245,21 @@ body .wrap {
 .footer__left ul li a {
   font-family: 'MuseoSansCyrl_300', sans-serif;
   font-weight: 300;
-  font-size: 21px;
+  font-size: 18px;
   color: #c2cad7;
 }
 
 .footer__left ul li a.active {
   font-family: 'MuseoSansCyrl_500', sans-serif;
   font-weight: 500;
-  font-size: 21px;
+  font-size: 18px;
   color: #ecf0f6;
 }
 
 .footer__left > a {
   font-family: 'MuseoSansCyrl_300', sans-serif;
   font-weight: 300;
-  font-size: 21px;
+  font-size: 18px;
   color: #dae2ee;
   display: block;
   margin-bottom: 5px;
@@ -2262,7 +2268,7 @@ body .wrap {
 .footer__left p {
   font-family: 'MuseoSansCyrl_300', sans-serif;
   font-weight: 300;
-  font-size: 21px;
+  font-size: 18px;
   opacity: .5;
   color: #c2cad7;
 }
@@ -2270,7 +2276,7 @@ body .wrap {
 .footer__right p {
   font-family: 'MuseoSansCyrl_300', sans-serif;
   font-weight: 300;
-  font-size: 21px;
+  font-size: 18px;
   text-align: right;
   color: #c2cad7;
   margin-bottom: 10px;
@@ -2279,7 +2285,7 @@ body .wrap {
 .footer__right a {
   font-family: 'MuseoSansCyrl_500', sans-serif;
   font-weight: 500;
-  font-size: 21px;
+  font-size: 18px;
   text-align: right;
   color: #c2cad7;
   display: block;
@@ -2418,7 +2424,7 @@ body .wrap {
 .popup h3 {
   font-family: 'MuseoSansCyrl_900', sans-serif;
   font-weight: 900;
-  font-size: 36px;
+  font-size: 34px;
   color: #000;
   margin-bottom: 20px;
 }
@@ -2477,7 +2483,7 @@ body .wrap {
 .popup form button {
   font-family: 'MuseoSansCyrl_500', sans-serif;
   font-weight: 500;
-  font-size: 29px;
+  font-size: 24px;
   color: #000;
   background: transparent;
   padding: 10px 0;
@@ -2834,20 +2840,6 @@ body .wrap {
     margin: auto;
   }
 
-  .card-mobile .wrap {
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-  }
-
-  .card-mobile__card {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .card-mobile__mobile {
-    width: 100%;
-  }
-
   .news__item {
     padding: 15px;
   }
@@ -3171,6 +3163,22 @@ body .wrap {
 
   .promo-work__item:nth-child(3) {
     background-position: 5px 50%;
+  }
+
+  .card-mobile .wrap {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .card-mobile__card {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .card-mobile__mobile {
+    text-align: center;
+    width: 100%;
   }
 
   .card-mobile__card p {
