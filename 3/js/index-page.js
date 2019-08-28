@@ -4,6 +4,86 @@ $(function() {
 
 
 
+	// блок получения котировок на стороне фронтенда
+	// https://api.coinmarketcap.com/v1/ticker/bitcoin/
+  // https://api.coinmarketcap.com/v1/ticker/ethereum/
+  // https://api.coinmarketcap.com/v1/ticker/ripple/
+  // https://api.coinmarketcap.com/v1/ticker/eos/
+
+  // https://api.coincap.io/v2/assets/bitcoin/
+
+	$.getJSON('https://api.coincap.io/v2/assets/', function(data) {
+		var limit = 120*1000; // 120 секунд обновление всех данных по котировкам у клиента
+		var localStorageInitTime = localStorage.getItem('localStorageInitTime');
+
+		// иницилизация при старте один раз
+		prices = Object.entries(data);
+		priceBtc = prices[0][1][0]["priceUsd"];
+		priceBtc = (parseInt(priceBtc * 100)) / 100;
+		priceEth = prices[0][1][1]["priceUsd"];
+		priceEth = (parseInt(priceEth * 100)) / 100;
+		priceXrp = prices[0][1][2]["priceUsd"];
+		priceXrp = (parseInt(priceXrp * 100)) / 100;
+		priceBtcCash = prices[0][1][3]["priceUsd"];
+		priceBtcCash = (parseInt(priceBtcCash * 100)) / 100;
+		priceLtc = prices[0][1][4]["priceUsd"];
+		priceLtc = (parseInt(priceLtc * 100)) / 100;
+
+		$('.header__top-inner-left .btc span').text('$'+priceBtc.toFixed(2));
+		$('.header__top-inner-left .eth span').text('$'+priceEth);
+		$('.header__top-inner-left .xrp span').text('$'+priceXrp);
+		$('.header__top-inner-left .btccash span').text('$'+priceBtcCash);
+		$('.header__top-inner-left .ltc span').text('$'+priceLtc);
+
+		if (localStorageInitTime === null) {
+		  localStorage.setItem('localStorageInitTime', +new Date());
+
+		  // иницилизация на один раз при старте
+		  prices = Object.entries(data);
+		  priceBtc = prices[0][1][0]["priceUsd"];
+			priceBtc = (parseInt(priceBtc * 100)) / 100;
+			priceEth = prices[0][1][1]["priceUsd"];
+			priceEth = (parseInt(priceEth * 100)) / 100;
+			priceXrp = prices[0][1][2]["priceUsd"];
+			priceXrp = (parseInt(priceXrp * 100)) / 100;
+			priceBtcCash = prices[0][1][3]["priceUsd"];
+			priceBtcCash = (parseInt(priceBtcCash * 100)) / 100;
+			priceLtc = prices[0][1][4]["priceUsd"];
+			priceLtc = (parseInt(priceLtc * 100)) / 100;
+
+		  $('.header__top-inner-left .btc span').text('$'+priceBtc.toFixed(2));
+		  $('.header__top-inner-left .eth span').text('$'+priceEth);
+		  $('.header__top-inner-left .xrp span').text('$'+priceXrp);
+		  $('.header__top-inner-left .btccash span').text('$'+priceBtcCash);
+		  $('.header__top-inner-left .ltc span').text('$'+priceLtc);
+
+		} else if(+new Date() - localStorageInitTime > limit) {
+			// каждые 120 сек
+			prices = Object.entries(data);
+			priceBtc = prices[0][1][0]["priceUsd"];
+			priceBtc = (parseInt(priceBtc * 100)) / 100;
+			priceEth = prices[0][1][1]["priceUsd"];
+			priceEth = (parseInt(priceEth * 100)) / 100;
+			priceXrp = prices[0][1][2]["priceUsd"];
+			priceXrp = (parseInt(priceXrp * 100)) / 100;
+			priceBtcCash = prices[0][1][3]["priceUsd"];
+			priceBtcCash = (parseInt(priceBtcCash * 100)) / 100;
+			priceLtc = prices[0][1][4]["priceUsd"];
+			priceLtc = (parseInt(priceLtc * 100)) / 100;
+
+			$('.header__top-inner-left .btc span').text('$'+priceBtc);
+		  $('.header__top-inner-left .eth span').text('$'+priceEth);
+		  $('.header__top-inner-left .xrp span').text('$'+priceXrp);
+		  $('.header__top-inner-left .btccash span').text('$'+priceBtcCash);
+		  $('.header__top-inner-left .ltc span').text('$'+priceLtc);
+
+		  localStorage.clear();
+		  localStorage.setItem('localStorageInitTime', +new Date());
+		}
+	});
+
+
+
 	// owl
 	$('.owl-carousel').owlCarousel({
 		items: 5,
@@ -11,8 +91,9 @@ $(function() {
 		autoWidth: true,
 		margin: 25,
 		autoplay: true,
-		autoplayTimeout: 3000,
-		smartSpeed: 2800,
+		smartSpeed: 2000,
+		// autoplayTimeout: 3000,
+		// smartSpeed: 2000,
 		autoplayHoverPause:false,
 		nav: false,
 		dots: false
