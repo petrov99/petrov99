@@ -1,33 +1,113 @@
 $(function() {
 	// wow js
-	// new WOW().init();
+	new WOW().init();
 
 
-	$('.js-header-popup').on('click', function(e) {
-		$('.header-popup').fadeToggle('500');
+
+	// owl
+	$('.owl-carousel').owlCarousel({
+		items: 5,
+		loop: true,
+		autoWidth: true,
+		margin: 25,
+		autoplay: true,
+		autoplayTimeout: 3000,
+		smartSpeed: 2800,
+		autoplayHoverPause:false,
+		nav: false,
+		dots: false
+	});
+
+	$(window).on('focus', function () {
+	  $('.owl-next').trigger('click');
+	});
+
+	// $('.owl-carousel').on('changed.owl.carousel', function(event) {
+	//  	setTimeout(function()
+	// 	  {
+	//  		$('.owl-dot.active').click();
+
+	// 	  	// получение центрального слайда
+	// 	  	//console.log($('.owl-dot.active').index());
+
+	// 	  	// сброс значений
+	// 	  	$('.zero').css('display', 'none');
+	// 	  	$('.one').css('display', 'none');
+	// 	  	$('.two').css('display', 'none');
+
+	// 	  	// применение новых данных для центрального дива
+	// 	  	if ($('.owl-dot.active').index() == 0) {
+	// 	  		$('.zero').css('display', 'block');
+	// 	  	}
+	// 	  	if ($('.owl-dot.active').index() == 1) {
+	// 	  		$('.one').css('display', 'block');
+	// 	  	}
+	// 	  	if ($('.owl-dot.active').index() == 2) {
+	// 	  		$('.two').css('display', 'block');
+	// 	  	}
+	// 	  }, 140);
+	// });
+
+	var link = $('.header__top-inner-left');
+	var offset = link.offset();
+
+	var top = offset.top;
+	var left = offset.left;
+	link.css({"position" : "relative", "left" : -left});
+
+
+
+	// questions block switcher
+	$('.page-questions-texts__item button').on('click', function(e) {
+		$('.page-questions-texts__item button').removeClass('active');
+		$(this).addClass('active');
+		idblock =$(this).attr('data-id');
+
+		$('.page-questions-texts__result-description').hide(600);
+		$(".page-questions-texts__result").find("[id='"+idblock+"']").show(600);
 	});
 
 
 
 
-	$('.js-history').on('click', function(e) {
-		$('.page-bisinesswallet-history__bottom').toggle('slow');
-		$(this).toggleClass('active');
 
-		if($(this).is('.active')) {
-			$(this).text('развернуть');
+
+	// jQuery smooth scrolling
+	$('.go_to1').click( function() { // ловим клик по ссылке с классом go_to1
+		var scroll_el = $(this).attr('href'); // возьмем содержимое атрибута href, должен быть селектором, т.е. например начинаться с # или .
+	  
+		if ($(scroll_el).length != 0) { // проверим существование элемента чтобы избежать ошибки
+			$('html, body').animate({ scrollTop: $(scroll_el).offset().top }, 900); // анимируем скроолинг к элементу scroll_el
 		}
-		else {
-			$(this).text('свернуть');
-		}
+
+		return false; // выключаем стандартное действие
 	});
+
+	// onscroll
+	window.onscroll = function() {
+	  var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+	  // console.log(scrolled);
+
+	  if(scrolled > 700) {
+	    // $('.arrow').css('display', 'block');
+	    $('.arrow').show('slow', function() {
+	      //
+	    });
+	  }
+	  else {
+	    // $('.arrow').css('display', 'none');
+	    $('.arrow').hide('slow', function() {
+	      //
+	    });
+	  }
+	}
 
 
 
 
 	// popup
 	// ставим на кнопку которая вызывает данный popup
-	$('.js-question-lk').on('click', function(e) {
+	$('.js-popup').on('click', function(e) {
 	  e.preventDefault();
 
 	  // в input hidden помещаем значение button в data-user - когда нужно передать значение из button
@@ -63,178 +143,21 @@ $(function() {
 	  });
 	});
 
+	// .popup-login
+	$(".js-popup-login").on("click", function(e) {
+	  e.preventDefault();
 
-
-	// $('.js-in-balance').on('click', function(e) {
-	//   e.preventDefault();
-
-	//   $('.popup-out-balance').slideDown();
-	//   $('.popup-out-balance-overlay').css('display', 'block');
+	  $(".popup-login").slideToggle(600);
 	  
-	//   // поиск button close popup
-	//   $('.js-close-popup, .popup-out-balance-overlay').on('click', function(e) {
-	// 			e.preventDefault();
-	// 		$('.popup-out-balance').slideUp();
-	// 		$('.popup-out-balance-overlay').css('display', 'none');
-	//   });
-	// });
+	  // поиск button close popup-login
+	  // $(".js-close-popup-login").on("click", function(e) {
+	  // 	e.preventDefault();
 
-	// $('.js-out-balance').on('click', function(e) {
-	//   e.preventDefault();
+			// $(".popup-login").slideUp(600, function() {
 
-	//   $('.popup-in-balance').slideDown();
-	//   $('.popup-in-balance-overlay').css('display', 'block');
-	  
-	//   // поиск button close popup
-	//   $('.js-close-popup, .popup-in-balance-overlay').on('click', function(e) {
-	// 			e.preventDefault();
-	// 		$('.popup-in-balance').slideUp();
-	// 		$('.popup-in-balance-overlay').css('display', 'none');
-	//   });
-	// });
-
-
-
-
-
-
-
-	// js-in-balance вывести средства
-		$('.js-in-balance').on('click', function(e) {
-		  // e.preventDefault();
-		  $(window).scrollTop(0);
-
-		  $('.popup-in-balance').slideDown();
-		  $('.popup-in-balance-overlay').css('display', 'block');
-		  
-		  // поиск button close popup
-		  $('.js-close-popup-in-balance, .popup-in-balance-overlay').on('click', function(e) {
-				// $('.popup').css('display', 'none');
-				// $('.popup-overlay').css('display', 'none');
-				// or
-				$('.popup-in-balance').slideUp('300', function() {
-					
-					// stop iframe video play after close popup
-					// var video = $(".popup iframe").attr("src");
-					// $(".popup iframe").attr("src", "");
-					// $(".popup iframe").attr("src", video);
-				});
-				$('.popup-in-balance-overlay').css('display', 'none');
-				// $('.popup').find("input").val("");
-		  });
-		});
-
-		// выбор check для popup
-		$('.popup-in-balance__method1 >label, .popup-in-balance__method2 >label').on('click', function(e) {
-			$('.popup-in-balance__method1 .perf >img').css('display', 'none');
-			$('.popup-in-balance__method1 .adv >img').css('display', 'none');
-			$('.popup-in-balance__method1 .payeer >img').css('display', 'none');
-			$('.popup-in-balance__method1 .bitcoin >img').css('display', 'none');
-			$('.popup-in-balance__method1 .ya >img').css('display', 'none');
-			$('.popup-in-balance__method1 .visa >img').css('display', 'none');
-			$('.popup-in-balance__method1 .master >img').css('display', 'none');
-
-			$('.popup-in-balance__method2 .perf >img').css('display', 'none');
-			$('.popup-in-balance__method2 .adv >img').css('display', 'none');
-			$('.popup-in-balance__method2 .payeer >img').css('display', 'none');
-			$('.popup-in-balance__method2 .bitcoin >img').css('display', 'none');
-			$('.popup-in-balance__method2 .ya >img').css('display', 'none');
-			$('.popup-in-balance__method2 .visa >img').css('display', 'none');
-			$('.popup-in-balance__method2 .master >img').css('display', 'none');
-
-			$(this).find('>img').show(200);
-		});
-
-
-
-		// js-out-balance Пополнение баланса
-		$('.js-out-balance').on('click', function(e) {
-		  // e.preventDefault();
-		  $(window).scrollTop(0);
-
-		  $('.popup-out-balance').slideDown();
-		  $('.popup-out-balance-overlay').css('display', 'block');
-		  
-		  // поиск button close popup
-		  $('.js-close-popup-out-balance, .popup-out-balance-overlay').on('click', function(e) {
-				// $('.popup').css('display', 'none');
-				// $('.popup-overlay').css('display', 'none');
-				// or
-				$('.popup-out-balance').slideUp('300', function() {
-					
-					// stop iframe video play after close popup
-					// var video = $(".popup iframe").attr("src");
-					// $(".popup iframe").attr("src", "");
-					// $(".popup iframe").attr("src", video);
-				});
-				$('.popup-out-balance-overlay').css('display', 'none');
-				// $('.popup').find("input").val("");
-		  });
-		});
-
-		// выбор check для popup
-		$('.popup-out-balance__method1 >label, .popup-out-balance__method2 >label').on('click', function(e) {
-			$('.popup-out-balance__method1 .perf >img').css('display', 'none');
-			$('.popup-out-balance__method1 .adv >img').css('display', 'none');
-			$('.popup-out-balance__method1 .payeer >img').css('display', 'none');
-			$('.popup-out-balance__method1 .bitcoin >img').css('display', 'none');
-			$('.popup-out-balance__method1 .ya >img').css('display', 'none');
-			$('.popup-out-balance__method1 .visa >img').css('display', 'none');
-			$('.popup-out-balance__method1 .master >img').css('display', 'none');
-
-			$('.popup-out-balance__method2 .perf >img').css('display', 'none');
-			$('.popup-out-balance__method2 .adv >img').css('display', 'none');
-			$('.popup-out-balance__method2 .payeer >img').css('display', 'none');
-			$('.popup-out-balance__method2 .bitcoin >img').css('display', 'none');
-			$('.popup-out-balance__method2 .ya >img').css('display', 'none');
-			$('.popup-out-balance__method2 .visa >img').css('display', 'none');
-			$('.popup-out-balance__method2 .master >img').css('display', 'none');
-
-			$(this).find('>img').show(200);
-		});
-		
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+			// });
+	  // });
+	});
 
 
 
@@ -242,16 +165,10 @@ $(function() {
 	// email
 	$('.main-form').submit(function(event) {
 		event.preventDefault();
-		
-		// проверка на стороне клиента формы через js что форма не пустая
-		// var name = $('.name1').val();
-		// var phone = $('.tel1').val();
-		// console.log(name);
-		// console.log(phone);
 
 		$.ajax({
 			type: "POST",
-			url: "smart-question-lk.php",	// url: "smart-question-lk.php", даже если js и php не в одной папке!
+			url: "smart-questions.php",	// url: "smart-questions.php", даже если js и php не в одной папке!
 			data: $(this).serialize()
 		}).done(function(data) {
 			$(this).find("input").val("");
@@ -265,46 +182,7 @@ $(function() {
 			$('.popup-overlay').css('display', 'none');
 		});
 		
-		// if (name !== '' & phone !== '') {
-		// 	$.ajax({
-		// 		type: "POST",
-		// 		url: "mailer/smart.php",
-		// 		data: $(this).serialize()
-		// 	}).done(function() {
-		// 		$(this).find("input").val("");
-				
-		// 		//alert("Заявка отправлена!");
-		// 		window.location.href = "../mailer/thanks.html";
-				
-		// 		$("form").trigger("reset");
-				
-		// 		$('.popup').slideUp();
-		// 		$('.popup-overlay').css('display', 'none');
-		// 	});
-		// } else {
-		// 	alert('Данные не заполнены!');
-		// }
-		
 		return false;
 	});
-
-	// email - old
-	//$('.main-form').submit(function(event) {
-	//	event.preventDefault();
-	//	$.ajax({
-	//		type: "POST",
-	//		url: "mailer/smart.php",
-	//		data: $(this).serialize()
-	//	}).done(function() {
-	//		$(this).find("input").val("");
-	//		alert("Сообщение успешно отправлено");
-	//		$("form").trigger("reset");
-	//		
-	//		$('.popup').slideUp();
-	//		$('.popup-overlay').css('display', 'none');
-	//	});
-	//	return false;
-	//});
-
 
 });

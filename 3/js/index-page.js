@@ -168,13 +168,13 @@ $(function() {
 
 		$.ajax({
 			type: "POST",
-			url: "mailer/smart.php",	// url: "smart.php", даже если js и php не в одной папке!
+			url: "smart-questions.php",	// url: "smart-questions.php", даже если js и php не в одной папке!
 			data: $(this).serialize()
 		}).done(function(data) {
 			$(this).find("input").val("");
 			
 			//alert("Заявка отправлена!");
-			window.location.href = "../mailer/thanks.html";
+			window.location.href = "thanks.html";
 			
 			$("form").trigger("reset");
 			
